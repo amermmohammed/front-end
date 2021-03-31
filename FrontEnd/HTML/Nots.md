@@ -1,4 +1,5 @@
 ## Text styling with HTML
+```
 - <br>: make a new line.
 - <b></b>: bold text.
 - <i></i>: italic text.
@@ -11,3 +12,4 @@
 - <del></del>: deleted text.
 - <ins></ins>: inserted text.
 - <mark></mark>: yellow marked text. 
+```
