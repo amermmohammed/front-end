@@ -6,23 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lists</title>
+    <style>
+        #shopping_list>li:not(.completed) {
+            color: blue;
+        }
+        
+        .completed {
+            color: grey;
+            text-decoration: line-through;
+        }
+        
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Shopping list</h1>
-    <ul>
-        <li>Apples</li>
+    <ul id="shopping_list">
+        <li class="completed">Apples</li>
         <li>Carrots</li>
         <li>Oranges</li>
-        <li><s>Bananas</s></li>
+        <li>Bananas</li>
     </ul>
     <h1>My goals This Month!</h1>
-    <ol>
+    <ul id="goal_list">
+        <li class="completed">Bananas</li>
         <li>Learn web development.</li>
         <li>Learn platforms development.</li>
         <li>Create a primary project.</li>
         <li>Lose weight.</li>
-    </ol>
+    </ul>
 </body>
 
 </html>

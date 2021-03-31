@@ -6,17 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blocks</title>
+    <style>
+        h1 {
+            color: #FF8F00;
+            font-size: 300%;
+            font-weight: normal;
+        }
+        
+        #first_paragraph {
+            color: green;
+            background-color: lightgrey;
+        }
+        
+        #second_paragraph {
+            color: blue;
+        }
+        
+        div {
+            font-size: 200%;
+        }
+        
+        span {
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <!-- comment -->
-    <div style="color:red;">
+    <div>
         <h1>First section</h1>
-        <p>Paragraph in <span style="color:green;">first section</span></p>
+        <p id="first_paragraph">Paragraph in
+            <span>first section</span></p>
     </div>
-    <div style="color:blue;">
+    <div>
         <h1>Second section</h1>
-        <p>Paragraph in second section</p>
+        <p id="second_paragraph">Paragraph in second section</p>
     </div>
 </body>
 

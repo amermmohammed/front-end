@@ -1,5 +1,5 @@
 # Text styling with HTML
-## - Tags 
+## - <span style="color:red">Tags</span>
 ```
 - <br>: make a new line.
 - <b></b>: bold text.
@@ -37,9 +37,10 @@
 - <option></option>: list option.
 - <div></div>: division or sector.
 - <span></span>: in line blocks.
-
+- <style></style>: allow writing css inside it. (indpendent)
 ```
-## - Attributes
+## - <span style="color:red">Attributes</span>
+
 ```
 - herf: hyper text reference.
 - Target: link oppening option (_blank= new tab).
@@ -56,4 +57,20 @@
 - required: make the inpute required.
 - name: identify input field.
 - style: allows text styling.
+```
+
+## - <span style="color:red">Selectors</span>
+```
+-x{}: x= Tags without braces =>
+    - h1{}= select all h1 tags in the page.
+    - h1{clor:red} === h1: selecotr, {color(Attributes):red(value)}: statment, h1{color:red}: rule.
+```
+```
+-#X{}: id selectors.
+```
+```
+-x>y: child selector: eg. x= <ul>, y=<li>.
+```
+```
+- .class{}: class selectors.
 ```
