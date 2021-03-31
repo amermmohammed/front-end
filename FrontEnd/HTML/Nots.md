@@ -35,6 +35,8 @@
 - <button></button>: button.
 - <select></select>: drop list
 - <option></option>: list option.
+- <div></div>: division or sector.
+- <span></span>: in line blocks.
 
 ```
 ## - Attributes
@@ -53,4 +55,5 @@
 - for: takes id value.
 - required: make the inpute required.
 - name: identify input field.
+- style: allows text styling.
 ```
