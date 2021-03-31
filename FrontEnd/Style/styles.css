@@ -1,0 +1,37 @@
+h1 {
+    color: #FF8F00;
+    font-size: 300%;
+    font-weight: normal;
+}
+
+#first_paragraph {
+    color: green;
+    background-color: lightgrey;
+    width: 50%;
+    height: 50%;
+}
+
+#second_paragraph {
+    color: blue;
+}
+
+
+/* commint */
+
+div {
+    height: 300px;
+    font-size: 200%;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    background-color: lightblue;
+    width: 300px;
+    display: inline-block;
+}
+
+html {
+    background-image: url("../Img/background.jpg");
+    background-size: 100% 100%;
+}

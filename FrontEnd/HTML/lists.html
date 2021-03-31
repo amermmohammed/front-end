@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lists</title>
+    <link rel="stylesheet" href="../Style/styles.css">
     <style>
+        #shopping_list {
+            list-style: circle;
+        }
+        
         #shopping_list>li:not(.completed) {
             color: blue;
         }
@@ -14,13 +19,19 @@
         .completed {
             color: grey;
             text-decoration: line-through;
+            list-style: disc;
         }
         
         h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
         }
+        
+        #goal_list>li:first-of-type {
+            list-style: url("../Img/number-1.png");
+        }
     </style>
+
 </head>
 
 <body>
@@ -32,13 +43,13 @@
         <li>Bananas</li>
     </ul>
     <h1>My goals This Month!</h1>
-    <ul id="goal_list">
+    <ol id="goal_list">
         <li class="completed">Bananas</li>
         <li>Learn web development.</li>
         <li>Learn platforms development.</li>
         <li>Create a primary project.</li>
         <li>Lose weight.</li>
-    </ul>
+    </ol>
 </body>
 
 </html>
