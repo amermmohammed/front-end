@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function myFunction() {
+        var name = "name";
+    }
+    var topStudents = ["Mohammed", "Ahmad", "Ali"];
+    var list = document.createElement("ol");
+    topStudents.forEach(createListItem);
+    document.body.appendChild(list);
+
+    function createListItem(studentName) {
+        var listItem = document.createElement("li");
+        listItem.textContent = studentName;
+        list.appendChild(listItem);
+    }
+    /*
+    /*
+    var i = 4;
+    while (i < 3) {
+        document.write("Hello World! ")
+        i = i + 1;
+    }
+    for (var i = 0; i < topStudents.length; i = i + 1) {
+        createListItem(topStudents[i]);
+    }*/
+    /*  topStudents[0] = "Amer";
+    document.write(topStudents.join('-'));
+    var myCar = {
+        name: "ToYoTa",
+        color: "red",
+        weight: 1800,
+        move: function(distance) {
+            document.write("The car drive: " + distance + " Meter..");
+        },
+        reset: function() {
+            document.write("The car did not move.");
+        },
+        engine: {
+            model: 'A-35',
+            oilType: 'diesel',
+            cylinder: 4
+        }
+    }
+    myCar.move(50);
+    myCar.reset();
+    document.write(myCar.engine.model); * /*/
+</script>
+
+</html>
