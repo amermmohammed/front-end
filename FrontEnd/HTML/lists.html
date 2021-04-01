@@ -37,19 +37,26 @@
 <body>
     <h1>Shopping list</h1>
     <ul id="shopping_list">
-        <li class="completed">Apples</li>
+        <li>Apples</li>
         <li>Carrots</li>
         <li>Oranges</li>
         <li>Bananas</li>
     </ul>
     <h1>My goals This Month!</h1>
     <ol id="goal_list">
-        <li class="completed">Bananas</li>
+        <li>Bananas</li>
         <li>Learn web development.</li>
         <li>Learn platforms development.</li>
         <li>Create a primary project.</li>
         <li>Lose weight.</li>
     </ol>
 </body>
+<script>
+    document.querySelectorAll("li").forEach(function(li) {
+        li.addEventListener('click', function() {
+            li.className = 'completed';
+        })
+    });
+</script>
 
 </html>
