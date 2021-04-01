@@ -63,3 +63,15 @@
 #navLinks ul li.active:hover {
     background-color: #484848;
 }
+
+@media(max-width: 768px) {
+    #slider,
+    #wrapper,
+    #wrapper .content,
+    #wrapper .content img {
+        text-align: center;
+    }
+    #slider {
+        height: 180px;
+    }
+}
