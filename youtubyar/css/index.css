@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "cairoFont";
+    src: url(../font/Cairo-Regular.ttf);
+}
+
+body {
+    font-family: "cairoFont", Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+button {
+    background-color: transparent !important;
+    color: #bf40bf !important;
+    border-color: #bf40bf !important;
+}
+
+button:hover {
+    background-color: #bf40bf !important;
+    color: #fff !important;
+}
+
+#top-menu .bg-light {
+    background-color: #fff !important;
+}
+
+#top-menu .video-icon {
+    background-color: #bf40bf;
+    color: #fff;
+    border-radius: 15%;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #bf40bf;
+    color: #fff;
+}
+
+.navbar .navbar-nav .active>.nav-link {
+    background-color: #bf40bf;
+    color: #fff;
+}
+
+.navbar .login {
+    color: #bf40bf;
+}
