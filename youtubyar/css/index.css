@@ -91,3 +91,62 @@ time {
 .card {
     transition: transform .5s;
 }
+
+#top-menu .fa-bars {
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 4;
+    right: -17rem;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    overflow-y: scroll;
+}
+
+.sidebar .purple {
+    color: #bf40bf;
+}
+
+.sidebar .list-group-item:hover {
+    color: #fff;
+    background-color: #bf40bf;
+}
+
+.sidebar .list-group-item:hover .purple {
+    color: #fff;
+}
+
+.sidebar .list-group-item {
+    width: 17rem;
+}
+
+#wrap.toggled .sidebar {
+    right: 0rem;
+}
+
+.sidebar::-webkit-scrollbar {
+    background-color: rgba(230, 230, 230);
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(97, 95, 95);
+    width: 8px;
+}
+
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
