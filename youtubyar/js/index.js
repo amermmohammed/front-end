@@ -23,4 +23,7 @@ $(document).ready(function() {
         });
         $('.layer').fadeOut();
     });
+    $(".search-icon").click(function() {
+        $(".search-input").slideToggle("slow");
+    });
 });
