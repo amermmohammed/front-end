@@ -8,6 +8,11 @@ body {
     background-color: #fafafa;
 }
 
+a {
+    color: #000;
+    text-decoration: none !important;
+}
+
 button {
     background-color: transparent !important;
     color: #bf40bf !important;
@@ -51,4 +56,38 @@ button:hover {
 input.form-control:focus,
 button:focus {
     box-shadow: none !important;
+}
+
+.card .card-icons {
+    position: relative;
+}
+
+time {
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: #fff;
+    background-color: #000;
+    padding: 0px 3px;
+}
+
+.card .fa-play {
+    position: absolute;
+    opacity: 80%;
+    top: 50%;
+    right: 50%;
+    color: #bf40bf;
+    display: none;
+}
+
+.card:hover .fa-play {
+    display: inline;
+}
+
+.card:hover {
+    transform: translateY(-.9%);
+}
+
+.card {
+    transition: transform .5s;
 }
