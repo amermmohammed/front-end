@@ -68,3 +68,13 @@ time {
         left: 1px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card .card-horizontal .card-body .channel-img {
+        display: block;
+        margin-top: 10px;
+    }
+    .card .card-horizontal .card-body .channel-img>img {
+        margin-left: 0px !important;
+    }
+}
