@@ -1,0 +1,41 @@
+.channel-page .follow button {
+    color: #fff !important;
+    background-color: #bf40bf !important;
+}
+
+.channel-page .video-section .card:hover {
+    transform: translateY(0%);
+}
+
+time {
+    position: absolute;
+    bottom: 180px !important;
+    left: 5px !important;
+    color: #fff;
+    background-color: #000;
+    padding: 0px 3px;
+    font-size: 13px;
+}
+
+.card .fa-play {
+    position: absolute;
+    opacity: 80%;
+    top: 30% !important;
+    right: 40% !important;
+    color: #bf40bf;
+    display: none;
+}
+
+.row {
+    --bs-gutter-x: 0px;
+}
+
+.social-media {
+    bottom: 0px;
+    left: 0px;
+}
+
+.follow {
+    bottom: 0px;
+    right: 0px;
+}
