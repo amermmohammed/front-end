@@ -1,0 +1,113 @@
+.video-card:hover {
+    transform: translateY(0%);
+}
+
+.watch-icons i:hover {
+    cursor: pointer;
+}
+
+.watch-page #more {
+    display: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.card-inner {
+    display: none;
+}
+
+.btn-info {
+    background-color: #bf40bf;
+    border-color: #bf40bf;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #e718e7;
+    border-color: #e718e7;
+}
+
+.card .card-horizontal .card-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body {
+    min-width: 0;
+}
+
+.card .img-square-wrapper .Card-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .card .card-horizontal .fa-play {
+        right: 35%;
+        top: 40%;
+    }
+    .card .img-square-wrapper .Card-img {
+        width: 100%;
+        height: auto;
+    }
+    .card .card-horizontal time {
+        bottom: 7px;
+        right: 1px;
+    }
+}
+
+@media (min-width: 991px) {
+    .card .card-horizontal .fa-play {
+        right: 42%;
+        top: 40%;
+    }
+    .card .img-square-wrapper .Card-img {
+        width: 200px;
+        height: auto;
+    }
+    .card .card-horizontal time {
+        bottom: 12px;
+        right: 1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card .img-square-wrapper .Card-img {
+        width: 300px !important;
+        height: 100% !important;
+    }
+    .card .card-horizontal .card-body .channel-img {
+        display: block;
+        margin-top: 10px;
+    }
+    h4 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .card .card-horizontal .card-body .channel-img>img {
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .card {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 607px) {
+    .replay-time {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .replay-time {
+        font-size: 14px;
+    }
+}
