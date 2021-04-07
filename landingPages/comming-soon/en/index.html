@@ -9,12 +9,17 @@
     <meta name="description" content="This is a landing page of a smartphone video-game app">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
     <!-- jQuery Library -->
     <script src="./assest/JavaScript/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Countdown-->
+    <script src="./assest/jquery.countdown/js/jquery.plugin.min.js"></script>
+    <script src="./assest/jquery.countdown/js/jquery.countdown.min.js"></script>
+    <!--index-JS-->
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -26,11 +31,35 @@
             <div class="slogen">
                 <img src="./images/slogin.png" alt="app logo"> </div>
         </div>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="page-heading">
+            <h1>Stay tuned for the application to launch soon</h1>
+            </br>
+            <p>It is simply a formality text (meaning that the end is the form and not the content) and is used in the clothing industries</p>
+        </div>
+        <div class="counter">
+            <div id="defaultcountdown"></div>
+        </div>
+        <div class="send-notification">
+            <p>Do you want to receive launching a notification?</p>
+            <form action="#" method="post" name="myForm">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        <span class="input-group-prepend">
+                            <button class="btn btn-outline-secondary Form-Submit" type="submit" name="submit">
+                                <img src="./images/send-1.png" alt="send">
+                            </button>
+                        </span>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Sorry!</strong> You have entered wrong email.
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            <strong>Great!</strong> The email form is correct.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </header>
 </body>
 
