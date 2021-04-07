@@ -1,0 +1,12 @@
+header {
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+header .brand {
+    padding: 20px 10px;
+    margin: 80px auto 50px;
+    border-bottom: 5px solid #464c53;
+    display: inline-block;
+}
