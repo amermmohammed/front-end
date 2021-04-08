@@ -24,4 +24,15 @@ $(document).ready(function() {
             $(this).parent().find(".alert.alert-success").fadeIn(200);
         }
     });
+    //form validation 2
+    $('.form-contro2').blur(function() {
+        var x = document.forms["myForm2"]["email2"].value;
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            $(this).parent().find(".alert.alert-danger").fadeIn(200);
+        } else {
+            $(this).parent().find(".alert.alert-success").fadeIn(200);
+        }
+    });
 });

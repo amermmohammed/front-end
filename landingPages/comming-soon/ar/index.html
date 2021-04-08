@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة هبوط لتطبيق هاتف</title>
+    <title>صفحة هبوط تطبيق هاتف</title>
     <meta name="description" content="هذه صفحة هبوط لتطبيق هاتف عبارة عن لعبة">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css" />
@@ -20,7 +20,6 @@
     <!--Countdown-->
     <script src="./assest/jquery.countdown/js/jquery.plugin.min.js"></script>
     <script src="./assest/jquery.countdown/js/jquery.countdown.min.js"></script>
-    <script src="./assest/jquery.countdown/js/jquery.countdown-ar.js"></script>
     <!--wow-JS-->
     <script src="./assest/wow/wow.min.js"></script>
     <!--index-JS-->
@@ -37,8 +36,8 @@
             <div class="slogen">
                 <img src="./images/slogin.png" alt="app logo"> </div>
         </div>
-        <div class="page-heading  wow animate__animated animate__bounceInUp">
-            <h1> انتظروا انطلاق التطبيق قريبا </h1>
+        <div class="page-heading wow animate__animated animate__bounceInUp">
+            <h1>انتظروا انطلاق التطبيق قريبا</h1>
             </br>
             <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
         </div>
@@ -47,26 +46,113 @@
         </div>
         <div class="send-notification">
             <p class=" wow animate__animated animate__backInLeft">هل تريد استلام إشعار عند الإطلاق؟</p>
-            <form action="#" method="post" name="meForm" class=" wow animate__animated animate__backInRight">
+            <form action="#" method="post" name="myForm" class=" wow animate__animated animate__backInRight">
                 <div class="form-group">
                     <div class="input-group">
-                        <input type="email" name="email" class="form-control" placeholder="بريدك الالكتروني" required>
+                        <input type="email" name="email" class="form-control" placeholder="ادخل بريدك" required>
                         <span class="input-group-prepend">
                             <button class="btn btn-outline-secondary Form-Submit" type="submit" name="submit">
                                 <img src="./images/send-1.png" alt="send">
                             </button>
                         </span>
-                        <div class="alert alert-danger">
-                            <strong>عذرا!</strong> لقد أدخلت بريدًا إلكترونيًا غير صالح.
+                        <div class="alert alert-danger" role="alert">
+                            <strong>معذرة!</strong> البريد الألكتروني الذي ادخلته ليس صالحا.
                         </div>
-                        <div class="alert alert-success">
-                            <strong>ممتاز!</strong> البريد الالكتروني صالح، اضغط إرسال
+                        <div class="alert alert-success" role="alert">
+                            <strong>ممتاز! </strong> البريد الألكتروني صالح،إضغط إرسال
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </header>
+    <section class="features">
+        <div class="container">
+            <h2>Game features</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="media">
+                        <img src="./images/icons/prush.png" alt="feature icon">
+                        <div class="media-body">
+                            <h5>تصميم أنيق ومتجاوب</h5>
+                            <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="media">
+                        <div class="media-body righty">
+                            <h5>اللعبة متوفرة بوضع الشاشة الممتلئ</h5>
+                            <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
+                        </div>
+                        <img src="./images/icons/phone.png" alt="feature icon">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="media">
+                        <img src="./images/icons/photo.png" alt="feature icon">
+                        <div class="media-body">
+                            <h5>يوجد صور لتوضيح تفاصيل اللعبة</h5>
+                            <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="media">
+                        <div class="media-body righty">
+                            <h5>يمكنك مشاركة اللعب كمجموعة</h5>
+                            <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
+                        </div>
+                        <img src="./images/icons/fork.png" alt="feature icon">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="media">
+                        <img src="./images/icons/mail.png" alt="feature icon">
+                        <div class="media-body">
+                            <h5>يمكنك إرسال الهدايا لأصدقائك عبر اللعبة</h5>
+                            <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="media">
+                        <div class="media-body righty">
+                            <h5>إضافة أصدقاء جدد لأستخدام اللعبة</h5>
+                            <p>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع</p>
+                        </div>
+                        <img src="./images/icons/person-pluse.png" alt="feature icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="top-footer text-center">
+            <div class="overlay">
+                <h3>أضف بريدك ليصلك إشعار فور الإنطلاق</h3>
+                <form action="#" method="post" name="myForm2" class=" wow animate__animated animate__backInRight">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="email" name="email2" class="form-control form-control2" placeholder="Your Email" required>
+                            <span class="input-group-prepend">
+                                <button class="btn btn-outline-secondary Form-Submit" type="submit" name="submit2">
+                                    <img src="./images/send-1.png" alt="send">
+                                </button>
+                            </span>
+                            <div class="alert alert-danger" role="alert">
+                                <strong>معذرة!</strong> البريد الألكتروني الذي ادخلته ليس صالحا.
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <strong>ممتاز! </strong> البريد الألكتروني صالح،إضغط إرسال
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contact text-center"></div>
+    </footer>
 </body>
 
 </html>

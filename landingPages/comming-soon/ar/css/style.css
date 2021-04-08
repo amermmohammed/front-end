@@ -64,7 +64,8 @@ header .send-notification p {
     color: #fff;
 }
 
-header .send-notification .input-group input {
+header .send-notification .input-group input,
+footer .input-group {
     font-size: 22px;
     color: #ffce00;
     border-width: 2px;
@@ -72,21 +73,79 @@ header .send-notification .input-group input {
     border-radius: 0px;
 }
 
-header .send-notification .input-group .btn {
+header .send-notification .input-group .btn,
+footer .btn {
     padding: 4px 10px;
     background-color: #ffce00 !important;
     border: 0px;
 }
 
-header .send-notification .input-group {
+footer .btn {
+    background-color: #939393 !important;
+}
+
+footer .btn:hover {
+    background-color: #ffce00!important;
+}
+
+header .send-notification .input-group,
+footer .input-group {
     width: 30%;
     margin: 0 auto;
 }
 
-header .send-notification .input-group .alert {
+header .send-notification .input-group .alert,
+footer .alert {
     display: none;
     position: absolute;
     top: 110%;
     right: 0;
     left: 0;
+}
+
+section.features h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #555555;
+}
+
+section.features {
+    padding: 100px 0px;
+}
+
+section.features .media {
+    border: 4px solid #fafafa;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+}
+
+section.features .media .media-body. h5 {
+    font-size: 12px !important;
+    color: #555555;
+}
+
+section.features .media .media-body. p {
+    font-size: 13px;
+    color: #9c9c9c;
+    line-height: 25px;
+}
+
+section.features div[class*="col-"]:nth-child(odd) {
+    text-align: right;
+}
+
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+footer .top-footer .overlay {
+    background-color: rgb(255, 204, 0, .7);
+    padding: 60px 0px;
+}
+
+footer .top-footer .overlay h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
