@@ -117,6 +117,8 @@ section.features .media {
     border: 4px solid #fafafa;
     padding: 40px 10px;
     margin-bottom: 20px;
+    position: relative;
+    max-height: 190px;
 }
 
 section.features .media .media-body. h5 {
@@ -141,11 +143,116 @@ footer {
 }
 
 footer .top-footer .overlay {
-    background-color: rgb(255, 204, 0, .7);
+    background-color: rgba(255, 204, 0, .7);
     padding: 60px 0px;
 }
 
 footer .top-footer .overlay h3 {
     font-size: 30px;
     margin-bottom: 30px;
+}
+
+footer .contact .overlay {
+    background-color: rgba(28, 28, 0, .9);
+    padding: 60px 0 10px;
+    color: #fff !important;
+}
+
+footer .contact .overlay {
+    background-color: rgba(28, 28, 28, 0.7);
+    padding: 60px 0 10px;
+    color: #fff;
+}
+
+footer .contact .overlay h3 {
+    font-size: 30px;
+    margin: 0 auto 30px;
+}
+
+footer .contact .overlay ul li a {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #fff;
+}
+
+footer .contact .overlay ul li {
+    margin: 0 5px 10px;
+}
+
+footer .contact .overlay ul li a.facebook:hover {
+    background-color: #3b5999;
+}
+
+footer .contact .overlay ul li a.twitter:hover {
+    background-color: #55acee;
+}
+
+footer .contact .overlay ul li a.linkedin:hover {
+    background-color: #0077B5;
+}
+
+footer .contact .overlay ul li a.instagram:hover {
+    background-color: #e4405f;
+}
+
+footer .contact .overlay hr {
+    width: 25%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+footer .contact .overlay p a {
+    color: #b4b4b4;
+}
+
+footer .contact .overlay p a i {
+    color: #ffce00;
+    margin-left: 5px;
+}
+
+footer .contact .overlay ul li a {
+    -webkit-transition: all 0.3s ease;
+    Transition: all 0.3s ease;
+}
+
+footer .input-group .form-control {
+    border-radius: 0px;
+    color: #ffce00 !important;
+}
+
+@media (max-width: 900px) {
+    header .page-heading p {
+        width: 90%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+    header .send-notification .input-group,
+    footer .input-group {
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    header .send-notification .input-group,
+    footer .input-group {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    header .send-notification .input-group,
+    footer .input-group {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    header .send-notification .input-group,
+    footer .input-group {
+        width: 50%;
+    }
 }
