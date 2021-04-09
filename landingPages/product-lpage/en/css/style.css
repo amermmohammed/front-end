@@ -166,7 +166,7 @@ section.prices {
     background-color: #f7f7f7;
 }
 
-section .prices .title h3 {
+section.prices .title h3 {
     font-size: 30px;
     color: #555555;
 }
@@ -231,4 +231,51 @@ section.prices .popular button {
 section.prices .popular button:hover {
     background-color: #ffffff;
     color: #7233a2;
+}
+
+section.faq {
+    padding: 55px 0px;
+    background-color: #ffffff;
+}
+
+section.faq .title {
+    margin-bottom: 50px;
+}
+
+section.faq h3 {
+    font-size: 30px;
+    color: #555555;
+}
+
+section.faq .card {
+    margin-bottom: 15px;
+    border-radius: 0px;
+    border: 2px solid #ebebeb;
+}
+
+section.faq .card .card-header {
+    background-color: transparent;
+    border-bottom: 0px;
+}
+
+section.faq .card .card-header h5 a {
+    font-size: 18px;
+    color: #555555;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+section.faq .card .card-header h5 a i {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+section.faq .card .card-block {
+    padding: 0px 20px 20px 20px;
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 24px;
 }
