@@ -256,6 +256,7 @@ section.faq .card {
 section.faq .card .card-header {
     background-color: transparent;
     border-bottom: 0px;
+    height: 60px;
 }
 
 section.faq .card .card-header h5 a {
