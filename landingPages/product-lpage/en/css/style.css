@@ -268,6 +268,10 @@ section.faq .card .card-header h5 a {
     text-decoration: none;
 }
 
+section.faq .card .card-header h5 a:hover {
+    cursor: pointer;
+}
+
 section.faq .card .card-header h5 a i {
     position: absolute;
     top: 2px;
@@ -279,4 +283,80 @@ section.faq .card .card-block {
     font-size: 15px;
     color: #c9c9c9;
     line-height: 24px;
+}
+
+section.faq .card .card-header h5 a.collapsed i:before {
+    content: "\f107";
+}
+
+section.video {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+section.video video {
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+section.video .overlay {
+    background-color: rgba(106, 48, 147, 0.7);
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+section.video button {
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px;
+    transform: translate(50%, -50%);
+}
+
+section.video button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    line-height: 90px;
+}
+
+section.video button {
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0px;
+    transform: translate(50%, -50%);
+}
+
+section.video button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    line-height: 90px;
 }
