@@ -6,3 +6,8 @@ function playPause() {
     else
         myVideo.pause();
 }
+$(document).ready(function() {
+    $(function() {
+        $("#commentForm").validate();
+    });
+});

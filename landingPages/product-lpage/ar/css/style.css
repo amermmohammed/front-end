@@ -360,3 +360,71 @@ section.video button i {
     margin-bottom: 50px;
     line-height: 90px;
 }
+
+section.contact {
+    background-color: #131313;
+    padding: 60px 0 40px;
+    display: block;
+}
+
+section.contact .contact-us .title h4 {
+    font-size: 18px;
+    line-height: 50px;
+    color: #758594;
+}
+
+section.contact .contact-us form .form-group {
+    margin-bottom: 6px;
+}
+
+section.contact .contact-us form .form-group input,
+section.contact .contact-us form .form-group textarea {
+    background-color: #242424;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #aeadad;
+    border: none;
+    text-align: right;
+}
+
+section.contact .contact-us form button {
+    background-color: #7233a2;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 24px;
+    border: 0px;
+}
+
+section.contact .contact-us form .error {
+    color: rgb(255, 0, 0);
+}
+
+section.contact .other-products .title h4 {
+    color: #758594;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+section.contact .other-products .media .media-body h5 {
+    color: #aeadad;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex !important;
+}
+
+section.contact .other-products .media .media-body p {
+    color: #737373;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex !important;
+}
+
+section.contact .other-products .media {
+    margin-bottom: 25px;
+}
+
+section.contact .other-products .media img {
+    margin-left: 20px;
+}
