@@ -89,6 +89,15 @@ header .header .layer .navbar-brand {
     margin-bottom: 26px;
 }
 
+.nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
 section.features .title h3 {
     font-size: 36px;
     color: #555555;
@@ -425,4 +434,97 @@ section.contact .other-products .media {
 
 section.contact .other-products .media img {
     margin-right: 20px;
+}
+
+footer {
+    background-color: #1d1d1d;
+    line-height: 80px;
+}
+
+footer ul li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #1d1d1d;
+    background-color: #718292;
+    border-radius: 50%;
+    display: block;
+}
+
+footer ul li a:hover {
+    background-color: #1d1d1d;
+    color: #718292;
+}
+
+footer .copyrights p {
+    font-size: 15px;
+    color: #919191;
+    text-align: right;
+}
+
+@media (max-width:900px) {
+    header {
+        overflow-x: hidden;
+    }
+    .product-img img:first-of-type {
+        width: 120%;
+    }
+    .buttons {
+        margin-bottom: 50px;
+    }
+    .section.features .feature .media img {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-img img:first-of-type {
+        width: 100%;
+    }
+    header.header .overlay .product-img img.label {
+        top: -30px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    header.header .overlay .product-img p {
+        top: -4px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .feature .media {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.features .feature:nth-of-type(even) {
+        text-align: right;
+    }
+    section.features .feature:nth-of-type(even) .media {
+        flex-flow: column-reverse;
+    }
+    section.features .feature:nth-of-type(even) .media .media-body h5 {
+        border-left: 0px;
+        border-right: 2px solid #7233a2;
+    }
+    section.prices .plan.popular {
+        margin-top: 100px;
+        padding-top: 15px;
+    }
+    .prices .container>.row .row>div {
+        flex-basis: auto;
+    }
+    .footer .container .row>div {
+        flex-basis: auto;
+    }
+    .footer .container .row>div ul {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .footer .container .row>div .copyrights p {
+        text-align: center !important;
+        margin-bottom: 0;
+    }
 }
