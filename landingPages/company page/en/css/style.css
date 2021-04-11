@@ -65,3 +65,40 @@ nav.navbar.noTransparrent {
 nav.navbar.noTransparrent .navbar-brand img {
     width: 80%;
 }
+
+nav.navbar button.navbar-toggler {
+    margin: 30px auto;
+    transition: all 1s ease;
+}
+
+nav.navbar button.navbar-toggler span {
+    color: #ffffff;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler span {
+    color: #16aeca;
+}
+
+@media (max-width: 767px) {
+    nav.navbar .container {
+        /* ليصبح حجم الحاوى مساوي لحجم الشاشة */
+        max-width: 100%;
+        /* bootstrap لتبديل اماكن العناصر فى القائمة و لتتناسب مع النسخة الحديثة من */
+        flex-direction: row-reverse;
+    }
+    .navbar .navbar-toggler {
+        /* إلغاء الحدود الافتراضية الموجودة على زر القائمة*/
+        outline: none;
+        margin: 0 !important;
+    }
+    .navbar .navbar-toggler span {
+        /* لتوسيط ايقونة زر الهاتف فى المنتصف*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.navbar .navbar-brand img {
+        /* تصغير حجم الصورة فى مقاس الهاتف*/
+        width: 80%;
+    }
+}
