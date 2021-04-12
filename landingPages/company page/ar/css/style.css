@@ -226,28 +226,113 @@ section.gallery .work-gallery a {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    width: 100%;
+}
+
+section.gallery .work-gallery a img {
+    width: 100%;
 }
 
 section.gallery .work-gallery a .hover {
-    background-color: rgba(22, 147, 202, 0.9);
+    background-color: rgba(22, 174, 202, 0.9);
     position: absolute;
     top: 5%;
-    right: 5%;
-    height: 90%;
+    left: 5%;
     width: 90%;
+    height: 90%;
     color: #fff;
     opacity: 0;
+    z-index: 9;
+    transition: all .5s ease;
 }
 
 section.gallery .work-gallery a:hover .hover {
     opacity: 1;
-    transition: all 0.5s ease;
 }
 
 section.gallery .work-gallery a .hover i {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 2em;
     transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+section.gallery .work-gallery .overlay-gallery {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 102%;
+    height: 100vh;
+    z-index: 30;
+    overflow: hidden;
+    padding: 5% 10%;
+    opacity: 0;
+    transition: all 1s ease;
+    margin-top: -100vh;
+    text-align: right;
+}
+
+section.gallery .work-gallery .overlay-gallery:target {
+    opacity: 1;
+    margin-top: 0;
+}
+
+section.gallery .work-gallery .overlay-gallery img {
+    width: 100%;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text {
+    margin: 40px;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+    font-size: 36px;
+    line-height: 52px;
+    color: #16aeca;
+    margin-bottom: 30px;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text ul {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+    padding-right: 0;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text ul li a,
+section.gallery .work-gallery .overlay-gallery .gallery-text ul li .fa {
+    color: #555555;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text p {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 50px;
+    color: #919191;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 25px;
+    padding: 0px 30px;
+    background-color: #16aeca;
+    color: #ffffff;
+    width: auto;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text {
+    margin-top: 40px;
+}
+
+section.gallery .work-gallery .overlay-gallery a.close {
+    color: #16aeca;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    width: auto;
 }
