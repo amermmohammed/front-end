@@ -636,6 +636,54 @@
 
     </section>
 
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="row text-right">
+                <div class="col-md">
+                    <div class="map" id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19858.055172906003!2d9.938258630362828!3d51.52684780964271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a4d4b86f98cac7%3A0x425ac6d94ac3e30!2z2LrZiNiq2YrZhti62YY!5e0!3m2!1sar!2sde!4v1618306413612!5m2!1sar!2sde"
+                            width="560" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="info">
+                        <h3>عنوان الشركة</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> الولايات المتحدة نيويورك تايمز سكوير
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> المانيا ساكسونيا السفلى غوتنغن الجزء الجنوبي
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form text-center">
+                        <h3>تواصل معنا</h3>
+                        <form class="cmxform row" id="commentForm" action="">
+                            <div class="form-group col-sm-6">
+                                <input type="text" name="name" id="cname" minlength="2" class="form-control" placeholder="الإسم" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" name="email" id="cemail" class="form-control" placeholder="البريد الألكتروني" required>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <textarea class="form-control" name="cmment" id="ccomment" placeholder="الرسالة" required></textarea>
+                            </div>
+                            <button type="submit" name="submit" class="submit Form-Submit" value="Submit">
+                                إرسال
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <div style="height: 1500px;padding-top: 300px;" id="services">services</div>
     <div style="height: 1500px;padding-top: 300px;" id="gallery">gallery</div>
@@ -645,6 +693,8 @@
     <script src="asset/JavaScript/jquery-3.1.1.min.js"></script>
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="asset/countTo/jquery.countTo.js"></script>
+    <script src="asset/jquery.validate/jquery.validate.min.js"></script>
+    <script src="asset/jquery.validate/messages_ar.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
