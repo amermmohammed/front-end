@@ -79,30 +79,6 @@ nav.navbar.noTransparrent button.navbar-toggler span {
     color: #16aeca;
 }
 
-@media (max-width: 767px) {
-    nav.navbar .container {
-        /* ليصبح حجم الحاوى مساوي لحجم الشاشة */
-        max-width: 100%;
-        /* bootstrap لتبديل اماكن العناصر فى القائمة و لتتناسب مع النسخة الحديثة من */
-        flex-direction: row-reverse;
-    }
-    .navbar .navbar-toggler {
-        /* إلغاء الحدود الافتراضية الموجودة على زر القائمة*/
-        outline: none;
-        margin: 0 !important;
-    }
-    .navbar .navbar-toggler span {
-        /* لتوسيط ايقونة زر الهاتف فى المنتصف*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    nav.navbar .navbar-brand img {
-        /* تصغير حجم الصورة فى مقاس الهاتف*/
-        width: 80%;
-    }
-}
-
 header .overlay .slider .carousel-inner .carousel-item {
     min-height: 100vh;
     opacity: 0;
@@ -516,4 +492,85 @@ footer .copyright p {
     font-size: 15px;
     line-height: 78px;
     color: #919191;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: .5rem 0rem;
+    }
+    nav.navbar .container {
+        max-width: 100%;
+    }
+    .navbar .navbar-toggler {
+        outline: none;
+        margin: 0 !important;
+    }
+    .navbar .navbar-toggler span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.navbar .navbar-brand img {
+        width: 80%;
+    }
+    nav.navbar .navbar-collapse {
+        background-color: #16aeca;
+    }
+    nav.navbar.noTransparrent .navbar-collapse {
+        background-color: #ffffff;
+    }
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 18px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    section.gallery .work-gallery .overlay-gallery .gallery-text p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+        font-size: 14px;
+        line-height: 40px;
+    }
+    section.contacts .cmxform {
+        width: 100%;
+    }
+}
+
+@media (max-width: 980px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 30px;
+    }
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+        bottom: 25%;
+    }
+    section.services .card {
+        height: 290px;
+    }
+}
+
+@media (max-width: 575px) {
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+        left: 2%;
+        right: 2%;
+    }
+    header .overlay .slider .carousel-control-prev,
+    header .overlay .slider .carousel-control-next {
+        display: none;
+    }
+    .work-gallery .col-md>.col-sm>a {
+        display: block !important;
+    }
+    .work-gallery .col-md>.col-sm>a img {
+        width: 100%;
+    }
+    section.gallery .work-gallery .overlay-gallery img {
+        width: 50%;
+    }
 }
