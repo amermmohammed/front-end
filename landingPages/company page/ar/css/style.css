@@ -336,3 +336,28 @@ section.gallery .work-gallery .overlay-gallery a.close {
     font-weight: bold;
     width: auto;
 }
+
+section.statistics {
+    background-image: url(../images/bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.statistics .overlay {
+    background-color: rgba(22, 174, 202, 0.8);
+    padding: 100px 0;
+}
+
+section.statistics .overlay .stat p {
+    font-size: 18px;
+    color: #85ecff;
+    line-height: 22px;
+}
+
+section.statistics .overlay .stat .count {
+    font-size: 40px;
+    color: #ddfaff;
+    line-height: 60px;
+    font-weight: bold;
+}
