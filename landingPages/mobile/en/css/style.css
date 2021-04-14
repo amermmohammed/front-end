@@ -124,6 +124,40 @@ section.feature .mobile-img img {
     display: block;
 }
 
+section.option {
+    padding: 120px 0;
+    background-color: #f8f8f8;
+    z-index: -2;
+    position: relative;
+}
+
+section.option .images {
+    position: absolute;
+    bottom: -150px;
+    z-index: -1;
+}
+
+section.option .options {
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+section.option .options .media {
+    margin-bottom: 60px;
+}
+
+section.option .options .media h5 {
+    font-size: 24px;
+    line-height: 40px;
+    color: #141414;
+}
+
+section.option .options .media p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #757474;
+}
+
 @media (max-width:767px) and (min-width:576px) {
     section.banner .overlay .images {
         bottom: -500px;
@@ -165,5 +199,11 @@ section.feature .mobile-img img {
     }
     section.banner .overlay .banner-text button:last-child {
         margin-left: 0px;
+    }
+    section.option .images {
+        bottom: -400px;
+    }
+    section.option .options {
+        margin-bottom: 300px;
     }
 }
