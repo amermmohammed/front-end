@@ -8,3 +8,125 @@ body {
     direction: rtl;
     overflow-x: hidden;
 }
+
+section.banner {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -3;
+    text-align: right;
+    position: relative;
+}
+
+section.banner .overlay {
+    background-color: rgba(239, 71, 58, 0.8);
+    z-index: -2;
+    position: relative;
+    padding-top: 90px;
+}
+
+section.banner .overlay .images {
+    position: absolute;
+    bottom: -250px;
+    right: 0px;
+    z-index: -1;
+}
+
+section.banner .overlay .images img {
+    max-width: 100%;
+}
+
+section.banner .overlay .app-icon img {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+section.banner .overlay .banner-text h1 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+section.banner .overlay .banner-text p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+section.banner .overlay .banner-text button {
+    margin: 40px 0;
+    background-color: #fafafa;
+    line-height: 50px;
+}
+
+section.banner .overlay .banner-text button img {
+    width: 50px;
+    vertical-align: sub;
+}
+
+section.banner .overlay .banner-text button i {
+    font-size: 50px;
+}
+
+section.banner .overlay .banner-text button p {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: ar-font;
+    color: #232323;
+    text-align: right!important;
+}
+
+section.banner .overlay .banner-text button p span {
+    font-size: 18px;
+}
+
+section.banner .overlay .banner-text button:last-child {
+    margin-right: 20px;
+}
+
+@media (max-width:767px) and (min-width:576px) {
+    section.banner .overlay .images {
+        bottom: -500px;
+        right: 20%;
+    }
+    section.banner .overlay .app-icon img {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    section.banner .overlay .banner-text {
+        margin-bottom: 350px;
+    }
+    section.banner .overlay .banner-text button {
+        padding: .5rem 1rem;
+        line-height: 40px;
+    }
+    section.banner .overlay .banner-text button img {
+        width: 40px;
+        vertical-align: sub;
+    }
+    section.banner .overlay .banner-text button i {
+        width: 40px;
+    }
+}
+
+@media (max-width:575px) {
+    section.banner .overlay .images {
+        bottom: -500px;
+        right: 5%;
+        left: 5%;
+    }
+    section.banner .overlay .app-icon img {
+        margin: 0 auto 30px;
+        display: block;
+    }
+    section.banner .overlay .banner-text {
+        margin-bottom: 350px;
+        text-align: center;
+    }
+    section.banner .overlay .banner-text button:last-child {
+        margin-right: 0px;
+    }
+}
