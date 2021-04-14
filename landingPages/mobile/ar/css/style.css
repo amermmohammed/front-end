@@ -163,6 +163,52 @@ section.option .options .media p {
     color: #757474;
 }
 
+section.slider {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+section.slider .title {
+    margin-bottom: 60px;
+}
+
+section.slider .title h3 {
+    font-size: 36px;
+    color: ;
+}
+
+section.slider .carousel-inner {
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.slider .carousel-indicators {
+    bottom: -60px;
+    padding: 0;
+}
+
+section.slider .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ef473a;
+    border-radius: 50%;
+}
+
+section.slider .carousel-indicators li.active {
+    background-color: #ef473a;
+}
+
+section.slider .carousel-control-next,
+section.slider .carousel-control-prev {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ef473a;
+    border-radius: 50%;
+    color: #ef473a;
+    opacity: 1;
+    margin: auto;
+}
+
 @media (max-width:767px) and (min-width:576px) {
     section.banner .overlay .images {
         bottom: -500px;
@@ -210,5 +256,10 @@ section.option .options .media p {
     }
     section.option .options {
         margin-bottom: 300px;
+    }
+    section.slider .carousel-control-next,
+    section.slider .carousel-control-prev {
+        width: 35px;
+        height: 35px;
     }
 }
