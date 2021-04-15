@@ -260,6 +260,129 @@ section.faq .overlay .card .card-header h5 a.collapsed[aria-expanded="false"] i:
     content: "\f107";
 }
 
+footer {
+    background-color: #232323;
+    overflow: hidden;
+}
+
+footer .footer .widget .title h4 {
+    color: #f4f8fb;
+    font-size: 24px;
+    line-height: 80px;
+}
+
+footer .footer .widget .title {
+    margin-bottom: 35px;
+    border-bottom: 2px solid #272727;
+    position: relative;
+}
+
+footer .footer .widget .title::after {
+    width: 90px;
+    height: 2px;
+    background-color: #ef473a;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: inline-block;
+}
+
+footer .footer .widget .content p {
+    color: #757474;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+footer .footer .widget .content ul.social-links li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    background-color: #353638;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+footer .footer .widget .content ul.social-links li a:hover {
+    background-color: #ef473a;
+}
+
+footer .footer .widget .content ul.social-links {
+    padding: 0px;
+    margin-top: 95px;
+}
+
+footer .footer .widget .content ul.social-links li {
+    margin-left: 8px;
+}
+
+footer .footer .widget .content ul.twittes {
+    padding: 0px;
+}
+
+footer .footer .widget .content ul.twittes li {
+    font-size: 15px;
+    color: #757474;
+    line-height: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2a2929;
+    position: relative;
+    text-indent: 20px;
+    padding-left: 5px;
+}
+
+footer .footer .widget .content ul.twittes li:last-of-type {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+footer .footer .widget .content ul.twittes li::before {
+    content: "\f099";
+    font-family: fontAwesome;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    line-height: 1em;
+    color: #ef473a;
+}
+
+footer .footer .widget .content form input {
+    font-size: 14px;
+    color: #c6c6c6;
+    line-height: 25px;
+    background-color: #2c2b2b;
+    border-radius: 0;
+    border-color: transparent;
+    margin-bottom: 15px;
+}
+
+footer .footer .widget .content form button {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 25px;
+    background-color: #ef473a;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+footer .copyright {
+    border-top: 2px solid #262626;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    line-height: 70px;
+    color: #565656;
+    text-align: center;
+}
+
+footer .footer .widget .content form .error {
+    color: red;
+}
+
 @media (max-width:767px) and (min-width:576px) {
     section.banner .overlay .images {
         bottom: -500px;

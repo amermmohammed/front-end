@@ -3,4 +3,7 @@ $(document).ready(function() {
         mobile: false
     });
     wow.init();
+    $(function() {
+        $("#emailForm").validate();
+    });
 });
