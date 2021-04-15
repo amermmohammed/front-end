@@ -5,4 +5,69 @@
 
 body {
     font-family: ar-font;
-    }
+}
+
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+}
+
+header .MainCard {
+    background-color: rgba(5, 117, 230, 0.8);
+    color: #ffffff;
+    transform: translateY(20%);
+    padding: 3% 10%;
+}
+
+header .MainCard img {
+    border: 5px solid #72ace7;
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 {
+    font-size: 36px;
+    color: #f9f9f9;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 span {
+    font-size: 24px;
+}
+
+header .MainCard ul {
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+header .MainCard ul li {
+    margin-right: 10px;
+}
+
+header .MainCard ul li a {
+    font-size: 24px;
+    color: #021b79;
+}
+
+header .MainCard h2 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header .MainCard p {
+    font-size: 15px;
+    color: #89c4ff;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+header .MainCard>a {
+    font-size: 18px;
+    color: #fff;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
