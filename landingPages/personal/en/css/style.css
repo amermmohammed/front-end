@@ -71,3 +71,28 @@ header .MainCard>a {
     line-height: 32px;
     margin-bottom: 40px;
 }
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 60px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
+    color: #0575e6;
+    background-color: #ffffff;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+    color: #0575e6;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+    color: #ffffff;
+    background-color: #0575e6;
+}
