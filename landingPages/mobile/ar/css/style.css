@@ -103,7 +103,7 @@ section.feature .features .media {
 section.feature .features .media-body h5 {
     font-size: 24px;
     color: #080808;
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
 }
 
 section.feature .features .media-body p {
@@ -390,6 +390,65 @@ footer .footer .widget .content form .error {
     color: red;
 }
 
+@media (max-width: 1199px) and (min-width: 991px) {
+    section.option .row .images img {
+        width: 110%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    section.option .row .images {
+        bottom: -28px;
+        right: 50px;
+    }
+    section.feature .mobile-img img {
+        width: 90%;
+        margin: 10px auto 100px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    section.banner .overlay .banner-text button {
+        margin: 0px 0 40px;
+        width: 210px;
+    }
+    section.banner .overlay .banner-text button:last-child {
+        margin-right: 0px;
+    }
+    section.feature {
+        padding: 90px 0 0;
+    }
+    section.feature .features {
+        margin-top: -40px;
+    }
+    section.feature .features i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    section.feature .features .media-body h5 {
+        font-size: 22px;
+    }
+    section.option .row .images img {
+        width: 115%;
+    }
+    section.option .row .images {
+        bottom: -80px;
+        right: -80px;
+    }
+    section.option .options .media {
+        margin-bottom: 30px;
+    }
+    section.option {
+        padding: 40px 0 0;
+    }
+    footer .footer .widget .content ul.social-links li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
 @media (max-width: 767px) and (min-width: 576px) {
     section.banner .overlay .images {
         bottom: -500px;
@@ -442,5 +501,22 @@ footer .footer .widget .content form .error {
     section.slider .carousel-control-prev {
         width: 35px;
         height: 35px;
+    }
+}
+
+@media (min-width:500px) (max-width:575px) {
+    section.option {
+        padding-bottom: 150px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    section.option {
+        padding: 120px 0 300px;
+    }
+    section.option .images {
+        position: absolute;
+        bottom: -620px;
+        z-index: -1;
     }
 }
