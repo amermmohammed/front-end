@@ -497,7 +497,7 @@ footer .footer .widget .content form .error {
     }
 }
 
-@media (min-width:500px) (max-width:575px) {
+@media (min-width:500px) and (max-width:575px) {
     section.option {
         padding-bottom: 150px;
     }

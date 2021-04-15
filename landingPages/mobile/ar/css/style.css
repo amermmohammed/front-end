@@ -504,12 +504,6 @@ footer .footer .widget .content form .error {
     }
 }
 
-@media (min-width:500px) (max-width:575px) {
-    section.option {
-        padding-bottom: 150px;
-    }
-}
-
 @media (min-width:576px) and (max-width:767px) {
     section.option {
         padding: 120px 0 300px;
@@ -518,5 +512,11 @@ footer .footer .widget .content form .error {
         position: absolute;
         bottom: -620px;
         z-index: -1;
+    }
+}
+
+@media (min-width:500px) and (max-width:575px) {
+    section.option {
+        padding-bottom: 150px;
     }
 }
