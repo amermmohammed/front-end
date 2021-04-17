@@ -17,4 +17,7 @@ $(document).ready(function() {
     }).on('circle-animation-progress', function(event, progress, stepValue) {
         $(this).find('span').html(Math.round(stepValue * 100) + '%');
     });
+    $(function() {
+        $("#commentForm").validate();
+    });
 });
