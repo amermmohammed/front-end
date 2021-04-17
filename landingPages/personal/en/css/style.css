@@ -111,42 +111,6 @@ nav.navbar.noTransparrent button.navbar-toggler span {
     color: #0575e6;
 }
 
-@media (max-width: 767px) {
-    nav.navbar {
-        min-height: 80px;
-        text-align: right;
-    }
-    nav.navbar .container {
-        width: 100%;
-        position: relative;
-        min-height: 40px;
-    }
-    nav.navbar button.navbar-toggler {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 0;
-    }
-    nav.navbar button.navbar-toggler span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    nav.navbar.noTransparrent button.navbar-toggler {
-        margin: 0;
-    }
-    nav.navbar ul {
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 990px) {
-    nav.navbar ul.navbar-nav li a.nav-link {
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
-    }
-}
-
 section.licence {
     padding: 220px 0 80px;
     background-color: #f6fbff;
@@ -273,6 +237,82 @@ section.licence ul.timeline li:nth-of-type(even) .time-box:after {
 
 section.licence ul.timeline li:not(:first-of-type) {
     margin-top: -50px;
+}
+
+section.statistics {
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.statistics .overlay {
+    background-color: rgba(5, 117, 230, 0.7);
+    padding: 150px 0;
+}
+
+section.statistics .overlay .stat p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Open Sans';
+    color: #fff;
+    margin-top: 30px;
+}
+
+section.statistics .overlay .stat .circle canvas {
+    background-color: #eef6ff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+section.statistics .overlay .stat .circle {
+    position: relative;
+}
+
+section.statistics .overlay .stat .circle span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0575e6;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+@media (max-width: 767px) {
+    nav.navbar {
+        min-height: 80px;
+        text-align: right;
+    }
+    nav.navbar .container {
+        width: 100%;
+        position: relative;
+        min-height: 40px;
+    }
+    nav.navbar button.navbar-toggler {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    nav.navbar button.navbar-toggler span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav.navbar.noTransparrent button.navbar-toggler {
+        margin: 0;
+    }
+    nav.navbar ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
 }
 
 @media (max-width: 767px) {
