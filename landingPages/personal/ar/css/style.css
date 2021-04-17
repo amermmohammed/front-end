@@ -611,6 +611,18 @@ section.contacts form .error {
         padding-right: 0.75rem;
         padding-left: 0.75rem;
     }
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 390px;
+    }
+    section.contacts .overlay .contact-info ul.social li a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    section.contacts .overlay .contact-info .form form .form-group input,
+    section.contacts .overlay .contact-info .form form .form-group textarea {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -625,5 +637,21 @@ section.contacts form .error {
     }
     section.licence ul.timeline:before {
         height: 90%;
+    }
+    section.contacts .overlay .testimonials .slider {
+        width: 95%;
+    }
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+        padding: 60px 30px 20px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    section.contacts .overlay .contact-info ul.contact-us li {
+        overflow-wrap: break-word;
+        display: inline-block;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 }

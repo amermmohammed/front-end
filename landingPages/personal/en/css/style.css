@@ -463,16 +463,6 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev
     transform: translate(-50%, -50%);
 }
 
-.carousel-control-next {
-    left: -58px;
-    right: auto;
-}
-
-.carousel-control-prev {
-    right: -58px;
-    left: auto;
-}
-
 section.contacts .overlay .contact-info {
     background-color: #ffffff;
     padding: 50px;
@@ -601,14 +591,26 @@ section.contacts form .error {
         margin: 0;
     }
     nav.navbar ul {
-        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 @media (max-width: 990px) {
     nav.navbar ul.navbar-nav li a.nav-link {
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
+        padding-right: 0.50rem;
+        padding-left: 0.50rem;
+    }
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 390px;
+    }
+    section.contacts .overlay .contact-info ul.social li a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    section.contacts .overlay .contact-info .form form .form-group input,
+    section.contacts .overlay .contact-info .form form .form-group textarea {
+        font-size: 14px;
     }
 }
 
@@ -624,5 +626,21 @@ section.contacts form .error {
     }
     section.licence ul.timeline:before {
         height: 90%;
+    }
+    section.contacts .overlay .testimonials .slider {
+        width: 95%;
+    }
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+        padding: 60px 30px 20px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    section.contacts .overlay .contact-info ul.contact-us li {
+        overflow-wrap: break-word;
+        display: inline-block;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 }
