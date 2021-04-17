@@ -97,3 +97,52 @@ nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
     color: #ffffff;
     background-color: #0575e6;
 }
+
+nav.navbar.noTransparrent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler {
+    margin: 30px auto;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler span {
+    color: #0575e6;
+}
+
+@media (max-width: 767px) {
+    nav.navbar {
+        min-height: 80px;
+        text-align: right;
+    }
+    nav.navbar .container {
+        width: 100%;
+        position: relative;
+        min-height: 40px;
+    }
+    nav.navbar button.navbar-toggler {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    nav.navbar button.navbar-toggler span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav.navbar.noTransparrent button.navbar-toggler {
+        margin: 0;
+    }
+    nav.navbar ul {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+}
