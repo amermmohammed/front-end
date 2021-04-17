@@ -217,3 +217,75 @@ section.licence ul.timeline li .time-box:after {
     border-top: 2px solid #f4f3f3;
     transform: rotate(45deg);
 }
+
+section.licence ul.timeline {
+    padding-right: 0;
+    padding-top: 45px;
+    position: relative;
+}
+
+section.licence ul.timeline:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 75%;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: -1px;
+    background-color: #196dd1;
+}
+
+section.licence ul.timeline li {
+    position: relative;
+}
+
+section.licence ul.timeline li:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #196dd1;
+    top: 9%;
+    right: 50%;
+    margin-right: -5px;
+}
+
+section.licence ul.timeline li:nth-of-type(even) {
+    direction: rtl;
+    text-align: right;
+}
+
+section.licence ul.timeline li:nth-of-type(even) .time-box h4 span {
+    margin-left: 25px;
+    margin-right: 0;
+    float: right;
+}
+
+section.licence ul.timeline li:nth-of-type(even) .time-box:after {
+    left: -10px;
+    right: auto;
+    border-left: 2px solid #f4f3f3;
+    border-bottom: 2px solid #f4f3f3;
+    border: 0;
+}
+
+section.licence ul.timeline li:not(:first-of-type) {
+    margin-top: -50px;
+}
+
+@media (max-width: 767px) {
+    section.licence ul.timeline li .time-box {
+        max-width: 100%;
+    }
+    section.licence ul.timeline li:not(:first-of-type) {
+        margin-top: 20px;
+    }
+    section.licence ul.timeline li .time-box:after {
+        display: none;
+    }
+    section.licence ul.timeline:before {
+        height: 90%;
+    }
+}
