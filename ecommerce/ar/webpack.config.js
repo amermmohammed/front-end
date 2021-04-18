@@ -19,20 +19,30 @@ module.exports = {
 
     module: {
         rules: [{
-            test: /\.html$/,
-            use: [{
-                loader: "html-loader",
-                options: {
-                    minimize: true,
-                }
-            }]
-        }, {
-            test: /\.css$/,
-            use: [
-                MiniCssExtractPlugin.loader,
-                'css-loader'
-            ]
-        }, ]
+                test: /\.html$/,
+                use: [{
+                    loader: "html-loader",
+                    options: {
+                        minimize: true,
+                    }
+                }]
+            }, {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'images',
+                    }
+                }]
+            },
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
