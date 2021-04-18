@@ -11,6 +11,12 @@ module.exports = {
     },
     mode: "development",
 
+    devServer: {
+        contentBase: path.join(__dirname, "/dist"),
+        port: 1239,
+        writeToDisk: true,
+    },
+
     module: {
         rules: [{
             test: /\.html$/,
@@ -22,7 +28,7 @@ module.exports = {
             }]
         }, {
             test: /\.css$/,
-            use: ['style-loader',
+            use: [
                 MiniCssExtractPlugin.loader,
                 'css-loader'
             ]
