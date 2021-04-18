@@ -1,1 +1,2 @@
-console.log("مرحبا بكم في متجر عربي");
+import './css/style.css';
+console.log("Welcome to My Market");
