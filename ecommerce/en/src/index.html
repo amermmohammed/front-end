@@ -13,13 +13,51 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="navbar">
+            <nav class="navbar custom-navbar">
                 <div class="container">
                     <div class="nav-header">
                         <a href="." class="navbar-brand">
-                            <img src="./images/logo.png" alt="متجر عربي">
+                            <img src="./images/logo.png" alt="My Market">
                         </a>
                     </div>
+                    <form class="form-inline">
+                        <input type="search" class="form-control" placeholder="search ..">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbar-Dropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                choose category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men">
+                                            Men
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women">
+                                            Women
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids">
+                                            Kids
+                                        </label>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn">
+                        Search    
+                        </button>
+                    </form>
                 </div>
             </nav>
         </div>

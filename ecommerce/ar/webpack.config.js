@@ -7,6 +7,7 @@ module.exports = {
     entry: { app: './src/index.js' },
     output: {
         path: path.join(__dirname, '/dist'),
+        publicPath: '',
         filename: "main.js"
     },
     mode: "development",
@@ -28,9 +29,13 @@ module.exports = {
                 }]
             }, {
                 test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
+                use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../'
+                        }
+                    },
+                    'css-loader',
                 ]
             },
             {
@@ -43,6 +48,17 @@ module.exports = {
                     }
                 }]
             },
+            {
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                use: [{
+                    loader: "file-loader",
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: "fonts",
+                        esModule: false,
+                    }
+                }]
+            }
         ]
     },
     plugins: [
