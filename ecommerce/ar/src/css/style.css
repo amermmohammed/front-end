@@ -20,3 +20,64 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.custom-form-control,
+.custom-btn {
+    border: 1px solid #EBEBEB;
+    box-shadow: none;
+    border-radius: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding: 6px 16px 7px 16px;
+    color: #868686;
+}
+
+.custom-btn:hover {
+    border: 1px solid #8c8c8c;
+    background-color: #d4d4d4;
+    color: #b86d07;
+}
+
+.categories .nav-link {
+    border-right: 0;
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    text-align: right !important;
+}
+
+.custom-dropdown-menu .checkbox {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.custom-dropdown-menu {
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 #EBEBEB;
+    color: #777;
+}
+
+.custom-dropdown-menu .checkbox label input {
+    margin-left: 5px;
+}
+
+.custom-navbar .search-btn {
+    border-radius: 0;
+    background-color: #FF3956;
+    border-color: #FF3956;
+    padding: 5px 15px 7px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.custom-navbar .search-btn:hover,
+.custom-navbar .search-btn:active,
+.custom-navbar .search-btn:focus,
+.custom-navbar .search-btn:active:focus,
+.custom-navbar .search-btn:active:hover {
+    background-color: #C2101E;
+    border-color: #C2101E;
+    color: #ffffff
+}
