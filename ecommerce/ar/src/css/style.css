@@ -109,3 +109,23 @@ body {
 .nav-item.dropdown .dropdown-menu li a:hover {
     background-color: #FFE7EA;
 }
+
+.custom-navbar a.btn-icon {
+    padding: 5px 10px 4px;
+    color: #777;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.custom-navbar .navbar-nav li:last-of-type {
+    margin-top: 8px;
+}
+
+.custom-navbar .btn-icon:hover {
+    color: #000000;
+    background-color: #bfbfbf;
+}
