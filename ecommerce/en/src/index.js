@@ -8,4 +8,7 @@ import 'bootstrap';
 $(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
+    $('.add-to-cart-btn').click(function() {
+        alert('The product has been added to the cart');
+    });
 });
