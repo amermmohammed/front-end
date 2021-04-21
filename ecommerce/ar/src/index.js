@@ -9,4 +9,7 @@ import 'bootstrap';
 $(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
+    $('.add-to-cart-btn').click(function() {
+        alert('تمت إضافة المنتج إلى عربة الشراء');
+    });
 });
