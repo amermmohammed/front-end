@@ -548,8 +548,65 @@ input[type=email] {
     }
 }
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991px) {
+    .custom-navbar {
+        padding: 15px 20px 30px;
+    }
+    .navbar-header {
+        display: block;
+        width: 100%;
+        margin-bottom: 22px;
+    }
+    .navbar-header .btn-icon {
+        float: left;
+    }
+    .custom-navbar .container {
+        max-width: 100%;
+    }
+    .form-inline {
+        width: 100%;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+    .form-inline .dropdown {
+        display: none;
+    }
+    .form-inline .custom-form-control {
+        width: 90%;
+    }
+    .form-inline .search-btn {
+        width: 10%;
+    }
+    .custom-navbar a.btn-icon,
+    .custom-navbar button.btn-icon {
+        color: #777;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 5px 10px 4px;
+        background-color: transparent;
+        font-size: 18px;
+    }
+    .custom-navbar a.btn-icon {
+        line-height: 0.5rem;
+    }
+    .custom-navbar .navbar-nav li a.nav-link {
+        padding: 10px 15px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid #eee;
+        margin-top: 15px;
+        padding-top: 8px;
+    }
+}
 
 @media (max-width: 767.98px) {}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .form-inline .custom-form-control {
+        width: 80%;
+    }
+    .form-inline .search-btn {
+        width: 20%;
+    }
+}
