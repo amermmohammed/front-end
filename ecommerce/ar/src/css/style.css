@@ -602,6 +602,17 @@ input[type=email] {
         margin-right: 1%;
         margin-left: 0%;
     }
+    .overlay {
+        display: none;
+    }
+    .custom-thumbnail .add-to-cart-btn {
+        background-color: #fff;
+        color: #868686;
+        font-weight: normal;
+    }
+    .custom-thumbnail img {
+        height: 200px;
+    }
 }
 
 @media (max-width: 767px) {
