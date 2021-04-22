@@ -612,6 +612,15 @@ h3.custom-heading {
         color: #868686;
         font-weight: normal;
     }
+    #copyright,
+    #social-icons {
+        width: 100%;
+        text-align: center;
+    }
+    #social-icons {
+        font-size: 150%;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -628,6 +637,21 @@ h3.custom-heading {
     }
     #carousel-featured .carousel-item img {
         height: 250px;
+    }
+    #brand-logos img {
+        max-height: 50px;
+        max-width: 50px;
+        margin: 5px 24px 5px 23px;
+    }
+    #footer-nav .footer-logo {
+        margin-bottom: 30px;
+    }
+    #footer-nav form {
+        max-width: 100%;
+        width: 100%;
+    }
+    #newsletter form .input-group {
+        width: 100%;
     }
 }
 
@@ -649,5 +673,8 @@ h3.custom-heading {
     .sale.larg {
         right: 15px;
         top: -15px;
+    }
+    #footer #brand-logos .img-container img {
+        margin: 5px 15px;
     }
 }
