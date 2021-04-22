@@ -541,3 +541,15 @@ input[type=email] {
     margin-left: 5px;
     margin-right: 5px
 }
+
+@media (max-width: 1199px) {
+    .custom-navbar .navbar-nav li a.nav-link {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}

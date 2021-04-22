@@ -16,6 +16,9 @@
             <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container">
                     <div class="nav-header">
+                        <button class="navbar-toggler btn btn-icon collapsed" data-toggle="collapse" data-target="#navbar-collapsed-menu">
+                            <i class="fas fa-bars"></i> 
+                            </button>
                         <a href="." class="navbar-brand">
                             <img src="./images/logo.png" alt="My Market">
                         </a>
@@ -24,7 +27,7 @@
                         <input type="search" class="form-control custom-form-control" placeholder="search ..">
                         <div class="dropdown categories">
                             <a href="#" class="nav-link dropdown-toggle custom-btn" id="navbar-Dropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                choose category
+                                category
                             </a>
                             <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-left">
                                 <li>
@@ -58,42 +61,45 @@
                         Search    
                         </button>
                     </form>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">Main Page</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="." class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Market Sections</a>
-                            <ul class="dropdown-menu custom-dropdown-menu">
-                                <li>
-                                    <a href="#" class="dropdown-item">
-                                        Men
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">
-                                        Women
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">
-                                        Kids
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="search.html" class="nav-link">Advanced Search</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html" id="btn-shopping-cart" class="btn custom-btn btn-icon" title="shopping cart" data-toggle="tooltip" data-placement="bottom">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Main Page</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="." class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Market Sections</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            Men
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            Women
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            Kids
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">Advanced Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html" id="btn-shopping-cart" class="btn custom-btn btn-icon" title="shopping cart" data-toggle="tooltip" data-placement="bottom">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </nav>
         </div>
