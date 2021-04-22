@@ -548,6 +548,12 @@ input[type=email] {
     }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+    .custom-thumbnail img {
+        height: 200px;
+    }
+}
+
 @media (max-width: 991px) {
     .custom-navbar {
         padding: 15px 20px 30px;
@@ -609,9 +615,6 @@ input[type=email] {
         background-color: #fff;
         color: #868686;
         font-weight: normal;
-    }
-    .custom-thumbnail img {
-        height: 200px;
     }
 }
 
