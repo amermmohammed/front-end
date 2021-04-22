@@ -11,4 +11,5 @@ $(function() {
     $('.add-to-cart-btn').click(function() {
         alert('The product has been added to the cart');
     });
+    $('#copyright').text("All rights reserved" + " " + new Date().getFullYear());
 });

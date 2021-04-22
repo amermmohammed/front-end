@@ -12,4 +12,5 @@ $(function() {
     $('.add-to-cart-btn').click(function() {
         alert('تمت إضافة المنتج إلى عربة الشراء');
     });
+    $('#copyright').text(" جميع الحقوق محفوظة للمتجر لسنة" + " " + new Date().getFullYear());
 });
