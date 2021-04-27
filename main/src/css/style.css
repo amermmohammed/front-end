@@ -512,3 +512,71 @@ section.icons .overlay {
     height: 160px;
     margin-top: 173px;
 }
+
+
+/**
+here
+**/
+
+section.portfolio .portfolio h2 {
+    font-size: 40px;
+    color: #ff0f15;
+    width: 30%;
+    line-height: 56px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 120px;
+}
+
+section.portfolio .portfolio h2::after {
+    content: 'Portfolio';
+    font-size: 96px;
+    color: rgba(255, 15, 21, 0.1);
+    width: 108%;
+    line-height: 110px;
+    position: absolute;
+    top: -60%;
+    right: -5%;
+}
+
+section.portfolio .portfolio p {
+    font-size: 18px;
+    color: #ffffff;
+    width: 40%;
+    line-height: 36px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+section.portfolio .custom-card {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+section.portfolio .card {
+    padding: 0;
+    border-radius: 0%;
+    border: 6px solid #ff0f15;
+}
+
+section.portfolio .card-body {
+    padding: 0;
+    width: 100%;
+    height: 150PX;
+    overflow: hidden;
+}
+
+section.portfolio .card img {
+    width: 100%;
+    height: auto;
+    transform: translateY(0%);
+    transition: 2s ease-in-out;
+}
+
+section.portfolio .card img:hover {
+    width: 100%;
+    height: auto;
+    transform: translateY(-72%);
+}
+
+section.portfolio .card .dirctionbtn {}
