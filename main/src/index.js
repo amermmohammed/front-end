@@ -6,7 +6,9 @@ import 'webpack-jquery-ui/css';
 import 'jquery/dist/jquery.min';
 import 'popper.js/dist/popper.min';
 import 'bootstrap';
+import 'animate.css/animate.min.css';
 import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
+import 'wow.js';
 
 $(document).ready(function() {
     $('#progressbar  p span').each(function() {
