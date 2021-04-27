@@ -1,0 +1,514 @@
+section.banner {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    padding-top: 1px;
+}
+
+body {
+    background-color: #000000;
+}
+
+section.banner::before {
+    font-family: "FontAwesome";
+    content: '\f107';
+    font-size: 50px;
+    color: #f4f4f4;
+    border: solid #ff0f15;
+    position: absolute;
+    left: 47%;
+    bottom: -33px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.navbar-nav {
+    padding-top: 50px;
+    margin-left: 175px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    display: inline;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.navbar-nav a.active {
+    position: relative;
+}
+
+.navbar-nav a.active::after {
+    content: '';
+    border-bottom: 2px solid #ff0f15;
+    position: absolute;
+    left: 0;
+    top: 56%;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 160px;
+    height: auto;
+    margin-left: 375px;
+    margin-right: 175px;
+}
+
+.row.heding-text {
+    margin-top: 50px !important;
+    text-align: center;
+    padding-top: 320px;
+}
+
+.row.heding-text h1 {
+    font-size: 120px;
+    color: #ff0f15;
+}
+
+.row.heding-text p {
+    font-size: 16px;
+    color: #f4f4f4;
+}
+
+.row.heding-text button.custom-btn {
+    font-size: 20px;
+    line-height: 45px;
+    color: #f4f4f4;
+    background-color: #ff0f15;
+    border-radius: 0px;
+    border: none;
+    padding: 10px 30px;
+}
+
+section.skiles {
+    margin-top: 120px;
+}
+
+section.skiles .skilesheading {
+    margin-bottom: 45px;
+}
+
+section.skiles h2 {
+    font-size: 46px;
+    color: #ff0f15;
+    width: 30%;
+    line-height: 56px;
+    margin-bottom: 20px;
+}
+
+section.skiles p {
+    font-size: 24px;
+    color: #ffffff;
+    width: 60%;
+    line-height: 36px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+#progressbar {
+    margin-top: 45px !important;
+}
+
+.progress-title {
+    font-size: 18px;
+    font-weight: 44px;
+    color: #fff;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.progress {
+    height: 10px;
+    background: #aeaeae;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar1 {
+    border-radius: 0px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 1s;
+    width: 75%;
+    background: #ff0f15;
+    overflow: visible !important;
+}
+
+.progress .progress-bar1:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    bottom: -2px;
+    right: 7px;
+    z-index: 0;
+}
+
+.progress .progress-bar1:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: transparent;
+    border: 8px solid rgba(255, 15, 21, 0.8);
+    position: absolute;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+}
+
+.progress-bar1 .percent1 {
+    position: absolute;
+    animation: animate-positive 0.1s;
+    width: 195%;
+    top: -68px;
+    font-size: 18px;
+}
+
+.progress .progress-bar2 {
+    border-radius: 0px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 1s;
+    width: 70%;
+    background: #ff0f15;
+    overflow: visible !important;
+}
+
+.progress .progress-bar2:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    bottom: -2px;
+    right: 7px;
+    z-index: 0;
+}
+
+.progress .progress-bar2:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 15, 21, 0.8);
+    position: absolute;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+}
+
+.progress-bar2 .percent2 {
+    position: absolute;
+    animation: animate-positive 0.1s;
+    width: 195%;
+    top: -68px;
+    font-size: 18px;
+}
+
+.progress .progress-bar3 {
+    border-radius: 0px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 1s;
+    width: 40%;
+    background: #ff0f15;
+    overflow: visible !important;
+}
+
+.progress .progress-bar3:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    bottom: -2px;
+    right: 7px;
+    z-index: 0;
+}
+
+.progress .progress-bar3:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 15, 21, 0.8);
+    position: absolute;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+}
+
+.progress-bar3 .percent3 {
+    position: absolute;
+    animation: animate-positive 0.1s;
+    width: 195%;
+    top: -68px;
+    font-size: 18px;
+}
+
+.progress .progress-bar4 {
+    border-radius: 0px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 1s;
+    width: 65%;
+    background: #ff0f15;
+    overflow: visible !important;
+}
+
+.progress .progress-bar4:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    bottom: -2px;
+    right: 7px;
+    z-index: 0;
+}
+
+.progress .progress-bar4::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 15, 21, 0.8);
+    position: absolute;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+}
+
+.progress-bar4 .percent4 {
+    position: absolute;
+    animation: animate-positive 0.1s;
+    width: 195%;
+    top: -68px;
+    font-size: 18px;
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+section.infos .overlay {
+    background-color: #ff0f15 !important;
+    height: 320px;
+    margin-top: 173px;
+}
+
+section.infos .custom-box {
+    border-radius: 0px;
+    border: 4px solid #fff;
+    margin: 100px 2px;
+}
+
+section.infos h3 {
+    font-size: 50px;
+    line-height: 56px;
+    color: #fff;
+}
+
+section.infos p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+
+section.infos .custom-box:first-of-type {
+    margin-left: 0;
+}
+
+section.infos .custom-box:last-child {
+    margin-right: 0;
+}
+
+section.experience h2 {
+    font-size: 40px;
+    color: #ff0f15;
+    width: 30%;
+    line-height: 56px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 120px;
+}
+
+section.experience .experience h2::after {
+    content: 'Experience';
+    font-size: 96px;
+    color: rgba(255, 15, 21, 0.1);
+    width: 108%;
+    line-height: 110px;
+    position: absolute;
+    top: -60%;
+    right: -5%;
+}
+
+section.experience p {
+    font-size: 18px;
+    color: #ffffff;
+    width: 40%;
+    line-height: 36px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+section.experience .custom-box {
+    border-radius: 0px;
+    border: 3px solid #ff0f15;
+    margin: 100px 2px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 390px;
+}
+
+section.experience .custom-box::after {
+    font-family: 'FontAwesome';
+    content: '\f0b1';
+    border-radius: 50%;
+    border: 2px solid #ff0f15;
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #f4f4f4;
+    top: 45px;
+    left: 22px;
+}
+
+section.experience .custom-box.active {
+    background-color: #ff0f15;
+}
+
+section.experience .custom-box.active::after {
+    border: 2px solid #fff;
+}
+
+section.experience h4 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 140px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+section.experience h4 span {
+    font-size: 18px;
+    color: #fff;
+    line-height: 24px;
+    text-align: justify;
+}
+
+section.experience .custom-box p,
+section.experience .custom-box2 p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    width: 100%;
+    padding-left: 27px;
+    padding-right: 27px;
+    text-align: justify;
+}
+
+section.education .education h2 {
+    font-size: 40px;
+    color: #ff0f15;
+    width: 30%;
+    line-height: 56px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 120px;
+}
+
+section.experience .education h2::after {
+    content: 'Education';
+    font-size: 96px;
+    color: rgba(255, 15, 21, 0.1);
+    width: 108%;
+    line-height: 110px;
+    position: absolute;
+    top: -60%;
+    right: -5%;
+}
+
+section.experience .education p {
+    font-size: 18px;
+    color: #ffffff;
+    width: 40%;
+    line-height: 36px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+section.experience .custom-box2 {
+    border-radius: 0px;
+    border: 3px solid #ff0f15;
+    margin: 100px 2px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 290px;
+}
+
+section.experience .custom-box2::after {
+    font-family: 'FontAwesome';
+    content: '\f19d';
+    border-radius: 50%;
+    border: 2px solid #ff0f15;
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #f4f4f4;
+    top: 45px;
+    left: 22px;
+}
+
+section.experience .custom-box2.active {
+    background-color: #ff0f15;
+}
+
+section.experience .custom-box2.active::after {
+    border: 2px solid #fff;
+}
+
+section.icons .overlay {
+    background-color: #ff0f15 !important;
+    height: 160px;
+    margin-top: 173px;
+}
