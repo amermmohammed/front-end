@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url(../fonts/Cairo-Regular.ttf);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.429;
+}
+
 section.banner {
     background-image: url('../images/bgmain.jpg');
     background-size: cover;
@@ -6,10 +21,6 @@ section.banner {
     height: 100vh;
     padding-top: 1px;
     background-repeat: no-repeat;
-}
-
-body {
-    background-color: #000000;
 }
 
 button a {
@@ -383,13 +394,14 @@ section.infos .custom-box:last-child {
 }
 
 section.experience h2 {
-    font-size: 40px;
+    font-size: 80px;
     color: #047ccc;
     width: 30%;
     line-height: 56px;
     margin-bottom: 30px;
     position: relative;
     margin-top: 120px;
+    text-transform: uppercase;
 }
 
 section.experience .experience h2::after {
@@ -554,13 +566,14 @@ here
 **/
 
 section.portfolio .portfolio h2 {
-    font-size: 40px;
+    font-size: 80px;
     color: #047ccc;
     width: 30%;
     line-height: 56px;
     margin-bottom: 30px;
     position: relative;
     margin-top: 120px;
+    text-transform: uppercase;
 }
 
 section.portfolio .portfolio h2::after {
@@ -721,9 +734,9 @@ section.icons2 .overlay .icon3 {
 }
 
 .container.contact-us h2 {
-    font-size: 40px;
+    font-size: 80px;
     color: #047ccc;
-    width: 30%;
+    width: 50%;
     line-height: 56px;
     margin-bottom: 30px;
     position: relative;
@@ -739,6 +752,7 @@ section.icons2 .overlay .icon3 {
     position: absolute;
     top: -60%;
     right: -5%;
+    z-index: -2;
 }
 
 .container.contact-us p {
