@@ -5,42 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amer's Portfolio</title>
+    <link href="{%=o.htmlWebpackPlugin.files.favicon%}" rel="shortcut icon">
 </head>
 
-<body>
-
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <section class="banner" id="banner">
-        <nav class="navbar navbar-expand-lg pl-auto pr-auto fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo-color.png" alt="mylogo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
 
-                </div>
-            </div>
-        </nav>
-        <div class="container">
+        <div class="container home-container" id="Home">
             <div class="row heding-text">
-                <div class="col-12 wow animate__animated animate__bounceInUp">
+                <div class="col-12 wow animate__animated animate__bounceInUp mx-auto">
                     <h1>Creative Designer</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
-                    <button class="custom-btn">
+                    <p>Iraqi, who has lived in Germany since 2015, despite having a BA in chemistry in 2013 and studying for a master’s degree in chemistry at the University of Göttingen,<span class="collapse" id="collapseExample"> the real passion lies in technology in general and graphic design
+                        particular. Gained most of the practical experience in the field of IT.</span></p>
+                    <button class="custom-btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                       Read More
                     </button>
+                    <button class="custom-btn"><a href="./images/lebenslauf.jpg" target="_blank">Download</a></button>
                 </div>
             </div>
         </div>
     </section>
+    <nav class="navbar navbar-expand-md fixed-top" id="navBar">
+        <div class="container-fluid nav-container">
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                 </span>
+                </button>
+
+            <a class="navbar-brand scroll" href="#">
+                <img src="images/logo-color.png" alt="logo" />
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link scroll" href="#Home">
+                    Home                        
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#Experience">
+                            Experience 
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#Education ">
+                            Education 
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#Portfolio">
+                            Portfolio
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#Contact">
+                            Contact
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- container -->
+    </nav>
+
+
+
 
 
     <section class="skiles text-center mr-auto ml-auto">
@@ -48,21 +80,22 @@
             <h2 class="mr-auto ml-auto">
                 I am a Front-End Developer and UI UX Designer based in Germany.
             </h2>
-            <p class="mr-auto ml-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         </div>
-        <div class="container">
-            <div class="row" id="progressbar">
+        <div class="container skiles-container">
+            <div class="row text-right" id="progressbar">
                 <div class="col-md-6">
                     <h3 class="progress-title">HTML5</h3>
                     <div class="progress">
                         <div class="progress-bar1">
                             <p class="percent1"><span>75</span>%</p>
                         </div>
+
                     </div>
                     <h3 class="progress-title">CSS</h3>
                     <div class="progress">
                         <div class="progress-bar2">
                             <p class="percent2"><span>70</span>%</p>
+
                         </div>
                     </div>
                 </div>
@@ -70,13 +103,15 @@
                     <h3 class="progress-title">JS</h3>
                     <div class="progress">
                         <div class="progress-bar3">
-                            <p class="percent3"><span>40</span>%</p>
+                            <p class="percent3 "><span>40</span>%</p>
+
                         </div>
                     </div>
                     <h3 class="progress-title">Bootstrap</h3>
                     <div class="progress">
                         <div class="progress-bar4">
-                            <p class="percent4"><span>65</span>%</p>
+                            <p class="percent4 "><span>50</span>%</p>
+
                         </div>
                     </div>
                 </div>
@@ -90,30 +125,30 @@
         <div class="overlay">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3 col-sm-6 mt-4 infos-box">
                         <div class="custom-box">
                             <h3 class="count1">41</h3>
                             <p>Happy customers</p>
                         </div>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-6 col-lg-3 col-sm-6 mt-4 infos-box">
                         <div class="custom-box">
                             <h3 class="count2">30</h3>
                             <p>Reviews and ratings</p>
                         </div>
 
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3 col-sm-6 mt-4 infos-box">
                         <div class="custom-box">
                             <h3 class="count2">800</h3>
-                            <p>Learning Hours last 90 days</p>
+                            <p>Hours learning</p>
                         </div>
 
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-6 col-lg-3 col-sm-6 mt-4 infos-box">
                         <div class="custom-box">
                             <h3 class="count3">100%</h3>
-                            <p>Evaluation on Khamsat</p>
+                            <p>Khamsat Evaluation</p>
                         </div>
 
                     </div>
@@ -124,107 +159,102 @@
     </section>
 
     <section class="experience">
-        <div class="experience text-center wow animate__animated animate__zoomInDown">
+        <div class="experience text-center wow animate__animated animate__zoomInDown" id="Experience">
             <h2 class="mr-auto ml-auto">
                 Experience
             </h2>
-            <p class="mr-auto ml-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         </div>
-        <div class="container">
+        <div class="container experience-container">
             <div class="row">
-                <div class="col-4">
-                    <div class="custom-box wow animate__animated active animate__fadeInLeft">
+                <div class="col-12 col-md-4">
+                    <div class="custom-box active wow animate__animated animate__fadeInLeft">
                         <h4>Freelancer<br>
-                            <span>Several Platforms like Khamsat & social networks |2015 – Present</span>
+                            <span>2015 – Present</span>
                         </h4>
-                        <p>providing several services such as graphic design, photo and video editing, logo design, promotional video making and PC problems consulting.</p>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="custom-box wow animate__animated animate__fadeInDown">
+                <div class="col-12 col-md-4">
+                    <div class="custom-box wow animate__animated animate__fadeInUp">
                         <h4>Office Worker<br>
-                            <span>Practice Dr. Al-Fityan , general surgery, Dortmund |Sep 2016 – Dec 2017</span>
+                            <span>Sep 2016 – Dec 2017</span>
                         </h4>
-                        <p>Office worker, reception, creation of patient files, reading of insurance cards, maintenance and repair of office organization devices.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="custom-box wow animate__animated animate__fadeInRight">
                         <h4>Self-employed<br>
-                            <span>Fallujah – Iraq |2011 – 2012</span>
+                            <span>2011 – 2012</span>
                         </h4>
-                        <p>Computer and cell phone repair shop, Photography, creating and printing out documents, Video-game sale and Video editing.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="education text-center wow animate__animated animate__zoomInDown">
+        <div class="education text-center wow animate__animated animate__zoomInDown" id="Education">
             <h2 class="mr-auto ml-auto">
                 Education
             </h2>
-            <p class="mr-auto ml-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         </div>
-        <div class="container">
+        <div class="container education-container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="custom-box2 active wow animate__animated animate__fadeInLeft">
                         <h4>M.Sc. Chemistry<br>
                             <span>April 2019 – Today</span>
                         </h4>
-                        <p>University of Göttingen – Germany</p>
+
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="custom-box2 wow animate__animated animate__fadeInUp">
-                        <h4>German Course DSH<br>
-                            <span>A1-C1 |Oct 2016 – Des  2017</span>
+                        <h4>German Course<br>
+                            <span>A1-C1 | 2016 –  2017</span>
                         </h4>
-                        <p>AstA – TU Dortmund – Germany</p>
+
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="custom-box2 wow animate__animated animate__fadeInRight">
                         <h4>B.Sc. Chemistry<br>
                             <span>2009 – 2013</span>
                         </h4>
-                        <p>University of Anbar – Iraq</p>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="icons">
+    <section class="icons d-none d-sm-block">
         <div class="overlay">
-            <div class="container pt-3">
+            <div class="container icons-container pt-3">
                 <div class="row text-center">
                     <div class="col-2">
-                        <div class="icons wow animate__animated animate__tada animate__infinite">
+                        <div class="icons">
                             <img src="./images/icons/html.png" class="animated bounce infinite" id="animated-img1" alt="html icon">
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="icons wow animate__animated animate__tada animate__infinite">
+                        <div class="icons">
                             <img src="./images/icons/css.png" alt="html icon">
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="icons wow animate__animated animate__tada animate__infinite">
+                        <div class="icons">
                             <img src="./images/icons/js.png" alt="html icon">
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="icons wow animate__animated animate__tada animate__infinite">
+                        <div class="icons nodicon">
                             <img class="pt-4" src="./images/icons/nod.png" alt="html icon">
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="icons wow animate__animated animate__tada animate__infinite">
+                        <div class="icons">
                             <img class="pt-4" src=" ./images/icons/npm.png " alt="html icon ">
                         </div>
                     </div>
                     <div class="col-2 ">
-                        <div class="icons wow animate__animated animate__tada animate__infinite">
+                        <div class="icons">
                             <img class="pt-4" src="./images/icons/weppack.png " alt="html icon ">
                         </div>
                     </div>
@@ -233,125 +263,196 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="Portfolio">
         <div class="portfolio text-center wow animate__animated animate__zoomInDown">
             <h2 class="mr-auto ml-auto">
                 Portfolio
             </h2>
-            <p class="mr-auto ml-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         </div>
-        <div class="container mt-5">
-            <div class="row text-center">
-                <div class="col-6">LTR</div>
-                <div class="col-6">RTL</div>
-            </div>
+        <div class="container portfolio-container mt-5">
             <div class="row">
-                <div class="col-3 custom-card">
+                <div class="col-12 col-sm-4 custom-card">
                     <div class="card">
                         <div class="card-body">
-                            <a class="btn btn-primary" href="../../myworks/landingPages/mobile/en/index.html" role="button">LTR</a>
-                            <a class="btn btn-primary" href="#" role="button">RTL</a>
+                            <a class="btn btn1 btn-primary" href="../../myworks/landingPages/mobile/en/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/landingPages/mobile/ar/index.html" target="_blank" role="button">RTL</a>
                             <img src="./images/screenshots/Screenshot.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 custom-card">
+
+                <div class="col-12 col-sm-4 custom-card">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./images/screenshots/phoneapprtl.png" alt="">
+                            <a class="btn btn1 btn-primary" href="../../myworks/youtube-proj/youtuby/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/youtube-proj/youtubyar/index.html" target="_blank" role="button">RTL</a>
+
+                            <img class="short" src="./images/screenshots/MyTubeltr.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 custom-card">
+
+                <div class="col-12 col-sm-4 custom-card">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./images/screenshots/MyTubeltr.png" alt="">
+                            <a class="btn btn1 btn-primary" href="../../myworks/ecommerce/en/dist/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/ecommerce/ar/dist//index.html" target="_blank" role="button">RTL</a>
+
+                            <img class="short" src="./images/screenshots/MyMarketltr.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 custom-card">
+
+
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-12 custom-card">
                     <div class="card">
-                        <div class="card-body">
-                            <img src="./images/screenshots/youtubertl.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./images/screenshots/MyMarketltr.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./images/screenshots/ecommercertl.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
+                        <div class="card-body custom-body">
+                            <a class="btn btn1 btn-primary" href="../../myworks/landingPages/personal/en/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/landingPages/personal/ar/index.html" target="_blank" role="button">RTL</a>
+
                             <img src="./images/screenshots/PersonalLandingPageltr.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 custom-card">
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-4 custom-card">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./images/screenshots/presonalrtl.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
+                            <a class="btn btn1 btn-primary" href="../../myworks/landingPages/product-lpage/en/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/landingPages/product-lpage/ar/index.html" target="_blank" role="button">RTL</a>
+
                             <img src="./images/screenshots/ProductLandingPageltr.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 custom-card">
+
+                <div class="col-12 col-sm-4 custom-card">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./images/screenshots/productrtl.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
+                            <a class="btn btn1 btn-primary" href="../../myworks/landingPages/company page//en/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/landingPages/company page//ar/index.html" target="_blank" role="button">RTL</a>
+
                             <img src="./images/screenshots/AgencyLandingPageltr.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 custom-card">
+
+                <div class="col-12 col-sm-4 custom-card">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./images/screenshots/agancyrtl.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./images/screenshots/smartPhoneLandingPageltr.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 custom-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./images/screenshots/apprtl.png" alt="">
+                            <a class="btn btn1 btn-primary" href="../../myworks/landingPages/comming-soon/en/index.html" target="_blank" role="button">LTR</a>
+                            <a class="btn btn2 btn-primary" href="../../myworks/landingPages/comming-soon/ar/index.html" target="_blank" role="button">RTL</a>
+                            <img class="short" src="./images/screenshots/smartPhoneLandingPageltr.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-    <script type="text/html " src="{require( 'index.js')} "></script>
+
+    <section class="icons2">
+        <div class="overlay">
+            <div class="heading text-center">
+                <h2>Have any project in mind?</h2>
+                <button class="btn custom-btn px-5 py-2"><a href="mailto:amermalikmohammed@gmail.com?subject=subject&message=message"">Hire Me</a></button>
+            </div>
+            <img class="icon1" src="./images/icons/Shapedown.png" alt="">
+            <img class="icon2" src="./images/icons/Shapeup.png" alt="">
+            <img class="icon3" src="./images/icons/Shapeups.png" alt="">
+        </div>
+    </section>
+
+
+    <div class="container contact-us" id="Contact">
+        <div class="experience text-center wow animate__animated animate__zoomInDown">
+            <h2 class="mr-auto ml-auto">
+                CONTACT ME
+            </h2>
+        </div>
+        <div id="contact-options" class="row ">
+
+            <!--Contact Information-->
+            <div class="col-12 col-lg-3 offset-lg-2">
+                <h4 class="heading-with-border-bottom">
+                    Contact Information
+                </h4>
+                <div id="contact-info">
+                    <div>
+                        <i class="fas fa-phone fa-lg"></i> +49 1578 080 3365
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope fa-lg"></i> amermalikmohammed@gmail.com
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt fa-lg"></i> Address: Saarbruecken, Saarland-Germany
+                    </div>
+                </div>
+
+                <!--Newsletter subscription section-->
+
+            </div>
+            <!--end Contact Information-->
+
+            <!--Leave message section-->
+            <div class="col-12 col-lg-6">
+                <h4>leave message</h4>
+                <form class="row" action="https://formspree.io/f/xwkavlqg" method="POST">
+                    <div class="col-md-6 form-group">
+                        <input class="form-control custom-input-details custom-form-control" name="name" type="text" placeholder="name" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input class="form-control custom-input-details custom-form-control" name="_replyto" type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="col-12 form-group">
+                        <textarea class="form-control custom-input-details custom-form-control" name="message" placeholder="message text" required></textarea>
+                    </div>
+                    <div class="col-12 form-group">
+                        <div class="clearfix">
+                            <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon">
+              <span>
+                Send Me
+              </span>
+            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--end Leave message section-->
+
+        </div>
+
+    </div>
+
+    <div id="footer-copyright-social" class="col-12">
+        <div class="container-fluid">
+            <div class="clearfix">
+                <div id="copyright" class="float-left">
+                </div>
+                <div id="social-icons" class="float-right">
+                    <a href="https://www.facebook.com/ameralrawi">
+                        <i class="fab fa-facebook-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.twitter.com/ameralrawi">
+                        <i class="fab fa-twitter-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ameralrawi">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" src="{require( 'index.js')}"></script>
 </body>
+
+</html>
 
 </html>
 

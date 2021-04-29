@@ -1,65 +1,95 @@
 section.banner {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bgmain.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     height: 100vh;
-    position: relative;
     padding-top: 1px;
+    background-repeat: no-repeat;
 }
 
 body {
     background-color: #000000;
 }
 
-section.banner::before {
-    font-family: "FontAwesome";
-    content: '\f107';
-    font-size: 50px;
-    color: #f4f4f4;
-    border: solid #ff0f15;
-    position: absolute;
-    left: 47%;
-    bottom: -33px;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.navbar-nav {
-    padding-top: 50px;
-    margin-left: 175px;
-}
-
-.navbar-nav a {
+button a {
     color: #fff;
-    display: inline;
+    text-decoration: none;
 }
 
-.navbar-nav .nav-link {
-    margin-left: 24px;
-    margin-right: 24px;
+button a:hover {
+    text-decoration: none;
 }
 
-.navbar-nav a.active {
+.row.heding-text {
+    margin-top: 100px !important;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center!important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    color: #047ccc;
     position: relative;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active,
+nav.navbar ul.navbar-nav li a.nav-link:focus,
+nav.navbar ul.navbar-nav li a.nav-link.active:focus,
+nav.navbar ul.navbar-nav li a.nav-link.active:hover {
+    color: #047ccc;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+    color: #047ccc;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:focus,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active:focus,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-nav a.active::after {
     content: '';
-    border-bottom: 2px solid #ff0f15;
+    border-bottom: 2px solid #047ccc;
     position: absolute;
     left: 0;
-    top: 56%;
-    width: 100%;
+    top: 53%;
+    width: 10%;
+}
+
+nav.navbar.noTransparrent {
+    border-bottom: 1px solid #047ccc;
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+nav.navbar button.navbar-toggler {
+    color: #047ccc;
+    float: left;
+    margin-left: 0px;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #047ccc;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler span {
+    color: #047ccc;
 }
 
 .navbar-brand img {
     width: 160px;
     height: auto;
-    margin-left: 375px;
-    margin-right: 175px;
 }
 
 .row.heding-text {
@@ -70,19 +100,22 @@ section.banner::before {
 
 .row.heding-text h1 {
     font-size: 120px;
-    color: #ff0f15;
+    color: #047ccc;
 }
 
 .row.heding-text p {
     font-size: 16px;
     color: #f4f4f4;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
 }
 
 .row.heding-text button.custom-btn {
     font-size: 20px;
     line-height: 45px;
     color: #f4f4f4;
-    background-color: #ff0f15;
+    background-color: #047ccc;
     border-radius: 0px;
     border: none;
     padding: 10px 30px;
@@ -98,7 +131,7 @@ section.skiles .skilesheading {
 
 section.skiles h2 {
     font-size: 46px;
-    color: #ff0f15;
+    color: #047ccc;
     width: 30%;
     line-height: 56px;
     margin-bottom: 20px;
@@ -140,7 +173,7 @@ section.skiles p {
     position: relative;
     animation: animate-positive 1s;
     width: 75%;
-    background: #ff0f15;
+    background: #047ccc;
     overflow: visible !important;
 }
 
@@ -164,7 +197,7 @@ section.skiles p {
     line-height: 32px;
     border-radius: 50%;
     background: transparent;
-    border: 8px solid rgba(255, 15, 21, 0.8);
+    border: 8px solid rgba(30, 23, 238, 0.6);
     position: absolute;
     bottom: -10px;
     right: -1px;
@@ -174,7 +207,7 @@ section.skiles p {
 .progress-bar1 .percent1 {
     position: absolute;
     animation: animate-positive 0.1s;
-    width: 195%;
+    width: 100%;
     top: -68px;
     font-size: 18px;
 }
@@ -185,7 +218,7 @@ section.skiles p {
     position: relative;
     animation: animate-positive 1s;
     width: 70%;
-    background: #ff0f15;
+    background: #047ccc;
     overflow: visible !important;
 }
 
@@ -208,7 +241,7 @@ section.skiles p {
     height: 32px;
     line-height: 32px;
     border-radius: 50%;
-    border: 8px solid rgba(255, 15, 21, 0.8);
+    border: 8px solid rgba(30, 23, 238, 0.6);
     position: absolute;
     bottom: -10px;
     right: -1px;
@@ -218,7 +251,7 @@ section.skiles p {
 .progress-bar2 .percent2 {
     position: absolute;
     animation: animate-positive 0.1s;
-    width: 195%;
+    width: 100%;
     top: -68px;
     font-size: 18px;
 }
@@ -229,7 +262,7 @@ section.skiles p {
     position: relative;
     animation: animate-positive 1s;
     width: 40%;
-    background: #ff0f15;
+    background: #047ccc;
     overflow: visible !important;
 }
 
@@ -252,7 +285,7 @@ section.skiles p {
     height: 32px;
     line-height: 32px;
     border-radius: 50%;
-    border: 8px solid rgba(255, 15, 21, 0.8);
+    border: 8px solid rgba(30, 23, 238, 0.6);
     position: absolute;
     bottom: -10px;
     right: -1px;
@@ -262,7 +295,7 @@ section.skiles p {
 .progress-bar3 .percent3 {
     position: absolute;
     animation: animate-positive 0.1s;
-    width: 195%;
+    width: 100%;
     top: -68px;
     font-size: 18px;
 }
@@ -272,8 +305,8 @@ section.skiles p {
     box-shadow: none;
     position: relative;
     animation: animate-positive 1s;
-    width: 65%;
-    background: #ff0f15;
+    width: 50%;
+    background: #047ccc;
     overflow: visible !important;
 }
 
@@ -296,7 +329,7 @@ section.skiles p {
     height: 32px;
     line-height: 32px;
     border-radius: 50%;
-    border: 8px solid rgba(255, 15, 21, 0.8);
+    border: 8px solid rgba(30, 23, 238, 0.6);
     position: absolute;
     bottom: -10px;
     right: -1px;
@@ -306,7 +339,7 @@ section.skiles p {
 .progress-bar4 .percent4 {
     position: absolute;
     animation: animate-positive 0.1s;
-    width: 195%;
+    width: 100%;
     top: -68px;
     font-size: 18px;
 }
@@ -318,7 +351,7 @@ section.skiles p {
 }
 
 section.infos .overlay {
-    background-color: #ff0f15 !important;
+    background-color: #047ccc !important;
     height: 320px;
     margin-top: 173px;
 }
@@ -351,7 +384,7 @@ section.infos .custom-box:last-child {
 
 section.experience h2 {
     font-size: 40px;
-    color: #ff0f15;
+    color: #047ccc;
     width: 30%;
     line-height: 56px;
     margin-bottom: 30px;
@@ -362,12 +395,13 @@ section.experience h2 {
 section.experience .experience h2::after {
     content: 'Experience';
     font-size: 96px;
-    color: rgba(255, 15, 21, 0.1);
+    color: rgba(21, 15, 255, 0.1);
     width: 108%;
     line-height: 110px;
     position: absolute;
     top: -60%;
     right: -5%;
+    z-index: -2;
 }
 
 section.experience p {
@@ -381,19 +415,18 @@ section.experience p {
 
 section.experience .custom-box {
     border-radius: 0px;
-    border: 3px solid #ff0f15;
+    border: 3px solid #047ccc;
     margin: 100px 2px;
     position: relative;
-    display: block;
     width: 100%;
-    height: 390px;
+    height: 50%;
 }
 
 section.experience .custom-box::after {
     font-family: 'FontAwesome';
     content: '\f0b1';
     border-radius: 50%;
-    border: 2px solid #ff0f15;
+    border: 2px solid #047ccc;
     position: absolute;
     display: block;
     width: 70px;
@@ -407,7 +440,7 @@ section.experience .custom-box::after {
 }
 
 section.experience .custom-box.active {
-    background-color: #ff0f15;
+    background-color: #047ccc;
 }
 
 section.experience .custom-box.active::after {
@@ -428,23 +461,11 @@ section.experience h4 span {
     font-size: 18px;
     color: #fff;
     line-height: 24px;
-    text-align: justify;
-}
-
-section.experience .custom-box p,
-section.experience .custom-box2 p {
-    font-size: 14px;
-    color: #fff;
-    line-height: 24px;
-    width: 100%;
-    padding-left: 27px;
-    padding-right: 27px;
-    text-align: justify;
 }
 
 section.education .education h2 {
     font-size: 40px;
-    color: #ff0f15;
+    color: #047ccc;
     width: 30%;
     line-height: 56px;
     margin-bottom: 30px;
@@ -455,12 +476,13 @@ section.education .education h2 {
 section.experience .education h2::after {
     content: 'Education';
     font-size: 96px;
-    color: rgba(255, 15, 21, 0.1);
+    color: rgba(21, 15, 255, 0.1);
     width: 108%;
     line-height: 110px;
     position: absolute;
     top: -60%;
     right: -5%;
+    z-index: -2;
 }
 
 section.experience .education p {
@@ -474,19 +496,20 @@ section.experience .education p {
 
 section.experience .custom-box2 {
     border-radius: 0px;
-    border: 3px solid #ff0f15;
+    border: 3px solid #047ccc;
     margin: 100px 2px;
     position: relative;
     display: block;
     width: 100%;
-    height: 290px;
+    height: 50%;
+    overflow: hidden;
 }
 
 section.experience .custom-box2::after {
     font-family: 'FontAwesome';
     content: '\f19d';
     border-radius: 50%;
-    border: 2px solid #ff0f15;
+    border: 2px solid #047ccc;
     position: absolute;
     display: block;
     width: 70px;
@@ -500,7 +523,7 @@ section.experience .custom-box2::after {
 }
 
 section.experience .custom-box2.active {
-    background-color: #ff0f15;
+    background-color: #047ccc;
 }
 
 section.experience .custom-box2.active::after {
@@ -508,9 +531,21 @@ section.experience .custom-box2.active::after {
 }
 
 section.icons .overlay {
-    background-color: #ff0f15 !important;
+    background-color: #047ccc !important;
     height: 160px;
     margin-top: 173px;
+}
+
+section.icons img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90px;
+}
+
+section.icons .nodicon {
+    padding-top: 25px;
 }
 
 
@@ -520,7 +555,7 @@ here
 
 section.portfolio .portfolio h2 {
     font-size: 40px;
-    color: #ff0f15;
+    color: #047ccc;
     width: 30%;
     line-height: 56px;
     margin-bottom: 30px;
@@ -531,12 +566,13 @@ section.portfolio .portfolio h2 {
 section.portfolio .portfolio h2::after {
     content: 'Portfolio';
     font-size: 96px;
-    color: rgba(255, 15, 21, 0.1);
+    color: rgba(21, 15, 255, 0.1);
     width: 108%;
     line-height: 110px;
     position: absolute;
     top: -60%;
     right: -5%;
+    z-index: -2;
 }
 
 section.portfolio .portfolio p {
@@ -556,27 +592,565 @@ section.portfolio .custom-card {
 section.portfolio .card {
     padding: 0;
     border-radius: 0%;
-    border: 6px solid #ff0f15;
+    border: 6px solid #047ccc;
 }
 
 section.portfolio .card-body {
     padding: 0;
     width: 100%;
-    height: 150PX;
+    height: 250PX;
     overflow: hidden;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+section.portfolio .card-body:hover {
+    transform: scale(0.9);
+}
+
+section.portfolio .card:hover {
+    border: none !important;
+    background: transparent !important;
 }
 
 section.portfolio .card img {
     width: 100%;
     height: auto;
     transform: translateY(0%);
-    transition: 2s ease-in-out;
+    transition: 1.5s ease;
 }
 
 section.portfolio .card img:hover {
     width: 100%;
     height: auto;
-    transform: translateY(-72%);
+    transform: translateY(-62%);
 }
 
-section.portfolio .card .dirctionbtn {}
+section.portfolio .card img.short:hover {
+    width: 100%;
+    height: auto;
+    transform: translateY(-30%);
+}
+
+section.portfolio .card img:hover {
+    width: 100%;
+    height: auto;
+    transform: translateY(-62%);
+}
+
+section.portfolio .card .card-body .btn1 {
+    background-color: black !important;
+    border-top: 6px solid #047ccc;
+    border-right: 6px solid #047ccc;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+}
+
+section.portfolio .card .card-body .btn2 {
+    background-color: black !important;
+    border-top: 6px solid #047ccc;
+    border-left: 6px solid #047ccc;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+}
+
+section.portfolio .card .card-body:hover .btn1,
+section.portfolio .card .card-body:hover .btn2 {
+    border: 6px solid #047ccc;
+}
+
+section.icons2 .heading h2 {
+    font-size: 60px;
+    color: #fff;
+    line-height: 46px;
+    padding-top: 130px;
+    margin-bottom: 37px;
+    z-index: 2;
+    position: relative;
+}
+
+section.icons2 .heading .custom-btn {
+    font-size: 20px;
+    line-height: 35px;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 3px solid #fff;
+    color: #fff;
+    margin-top: 37px;
+    z-index: 2;
+}
+
+section.icons2 .overlay {
+    background-color: #047ccc;
+    height: 435px;
+    margin-top: 173px;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+
+section.icons2 .overlay .icon1 {
+    position: absolute;
+    bottom: 16px;
+    left: 75px;
+    z-index: -1;
+}
+
+section.icons2 .overlay .icon2 {
+    position: absolute;
+    left: 41%;
+    top: 7%;
+    z-index: -1;
+}
+
+section.icons2 .overlay .icon3 {
+    position: absolute;
+    right: 120px;
+    top: 40px;
+    z-index: -1;
+}
+
+.container.contact-us h2 {
+    font-size: 40px;
+    color: #047ccc;
+    width: 30%;
+    line-height: 56px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.container.contact-us h2::after {
+    content: 'CONTACT';
+    font-size: 96px;
+    color: rgba(21, 15, 255, 0.1);
+    width: 108%;
+    line-height: 110px;
+    position: absolute;
+    top: -60%;
+    right: -5%;
+}
+
+.container.contact-us p {
+    font-size: 18px;
+    color: #ffffff;
+    width: 80%;
+    line-height: 36px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+#contact-options h4 {
+    font-size: 18px;
+    padding-bottom: 12px;
+    color: #fff;
+}
+
+#contact-options .heading-with-border-bottom {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #047ccc;
+}
+
+#contact-info {
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#contact-info .fa-lg {
+    color: #047ccc;
+    font-size: 18px;
+    margin: 10px 10px 10px 0px;
+    width: 25px;
+    text-align: center;
+}
+
+#contact-options textarea {
+    height: 128px !important;
+}
+
+#contact-options .custom-input-details {
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #047ccc;
+}
+
+#contact-options .custom-input-details::placeholder {
+    color: #a3a3a3;
+}
+
+#contact-options {
+    margin-bottom: 25px;
+}
+
+.custom-btn-with-icon {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+}
+
+.custom-btn-primary2 {
+    color: #ffffff;
+    background-color: #047ccc;
+    border-color: #047ccc;
+    border-radius: 0px;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+#footer-copyright-social {
+    background-color: #047ccc;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    height: 80px;
+}
+
+#footer-copyright-social a {
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+#footer-copyright-social a:hover {
+    text-decoration: none;
+}
+
+@media (min-width:1199px) {
+    section.skiles h2 {
+        font-size: 36px;
+        color: #047ccc;
+        width: 60%;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+    section.icons2 .overlay img {
+        width: 180px;
+    }
+    section.icons2 .overlay img.icon2 {
+        width: 300px;
+        left: 38%;
+        top: 18%;
+    }
+    section.infos .custom-box {
+        margin: 80px 2px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1199px) {
+    .row.heding-text h1 {
+        font-size: 80px;
+    }
+    .row.heding-text {
+        margin-top: 200px !important;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    .row.heding-text p {
+        font-size: 16px;
+        color: #f4f4f4;
+        padding-left: 120px;
+        padding-right: 120px;
+        text-align: justify;
+    }
+    section.skiles h2 {
+        font-size: 40px;
+        width: 70%;
+    }
+    section.infos .custom-box {
+        margin: 80px 2px;
+    }
+}
+
+@media (max-width:991px) and (min-width:767px) {
+    .row.heding-text h1 {
+        font-size: 70px;
+    }
+    .row.heding-text {
+        margin-top: 200px !important;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    section.skiles h2 {
+        font-size: 36px;
+        color: #047ccc;
+        width: 60%;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+    section.infos .custom-box {
+        border-radius: 0px;
+        border: 4px solid #fff;
+        margin: 10px 2px 2px 10px;
+    }
+    section.experience h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+    section.experience h4 span {
+        font-size: 16px;
+        text-align: left;
+    }
+    section.experience h2,
+    section.experience .education h2,
+    section.portfolio h2 {
+        margin-top: 75px;
+    }
+    section.experience p,
+    section.experience .education p,
+    section.portfolio p {
+        width: 80% !important;
+    }
+    section.experience .custom-box p {
+        width: 100% !important;
+    }
+    section.experience .custom-box::after,
+    section.experience .custom-box2::after {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        top: 1px;
+        left: 1px;
+    }
+    section.icons .overlay {
+        margin-top: 50px;
+    }
+    section.portfolio .card-body {
+        height: 175PX;
+    }
+    section.icons2 .overlay {
+        height: 235px;
+    }
+    section.icons2 .heading h2 {
+        font-size: 30px;
+        padding-top: 26px;
+    }
+    section.icons2 .heading .custom-btn {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 12px;
+        margin-left: -8px;
+    }
+    section.icons2 .overlay img {
+        width: 150px;
+    }
+    section.icons2 .overlay img.icon2 {
+        width: 269px;
+        left: 36.5%;
+        top: 24%;
+    }
+}
+
+@media (max-width:767px) and (min-width:575px) {
+    .home-container {
+        max-width: 100%;
+    }
+    .row.heding-text h1 {
+        font-size: 50px;
+    }
+    .row.heding-text p {
+        font-size: 16px;
+        width: auto;
+        text-align: justify;
+    }
+    .row.heding-text {
+        margin-top: 100px !important;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    section.skiles h2 {
+        font-size: 26px;
+        width: 80%;
+        line-height: 36px;
+    }
+    .experience-container,
+    .education-container,
+    .icons-container,
+    .portfolio-container {
+        max-width: 100%;
+    }
+    .container.contact-us h2,
+    section.portfolio .portfolio h2,
+    section.experience h2 {
+        width: 100%;
+    }
+    section.infos .custom-box {
+        margin: 2px 2px !important;
+    }
+    section.portfolio .portfolio h2::after {
+        display: none;
+    }
+    section.experience .education h2::after {
+        display: none;
+    }
+    section.experience .experience h2::after,
+    .container.contact-us h2::after,
+    section.icons2 .heading h2::after {
+        display: none;
+    }
+    section.experience .custom-box,
+    section.experience .custom-box2 {
+        margin: 10px 2px;
+        max-width: 100%;
+        height: 350px;
+        display: inline-block;
+    }
+}
+
+@media (max-width:767px) {
+    section.icons2 .overlay img {
+        width: 120px;
+    }
+    section.icons2 .overlay img.icon2 {
+        width: 200px;
+        left: 37%;
+        top: 39%;
+    }
+    nav .nav-container {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    section.icons .overlay img {
+        margin-top: 20px;
+        width: 60px;
+    }
+}
+
+@media (max-width:575px) {
+    .home-container {
+        width: 100% !important;
+        text-align: left !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .row.heding-text {
+        margin-top: 100px !important;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        text-align: center!important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .row.heding-text h1 {
+        font-size: 25px;
+    }
+    .row.heding-text button.custom-btn {
+        font-size: 10px;
+        line-height: 15px;
+        color: #f4f4f4;
+        padding: 10px 30px;
+    }
+    section.icons2 .overlay {
+        height: 235px;
+    }
+    section.icons2 .overlay img {
+        width: 60px;
+    }
+    section.icons2 .overlay img.icon1 {
+        left: 4%;
+        top: 72%;
+    }
+    section.icons2 .overlay img.icon2 {
+        width: 140px;
+        left: 38%;
+        top: 26%;
+    }
+    section.icons2 .overlay img.icon3 {
+        right: 4%;
+        bottom: 72%;
+    }
+    section.icons2 .heading h2 {
+        font-size: 30px;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    section.icons2 .heading .custom-btn {
+        font-size: 20px;
+    }
+    section.skiles h2 {
+        font-size: 26px;
+        width: 80%;
+        line-height: 36px;
+    }
+    .skiles-container {
+        max-width: 90%;
+    }
+    section.infos .overlay {
+        height: 300px;
+    }
+    .infos-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    section.infos .custom-box {
+        margin: 2px !important;
+    }
+    section.infos h3 {
+        font-size: 20px;
+        line-height: 36px;
+        padding: 0px;
+    }
+    section.infos p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0px;
+    }
+    section.experience .custom-box,
+    section.experience .custom-box2 {
+        margin: 10px 2px;
+        max-width: 100%;
+        height: 350px;
+    }
+    section.icons .overlay {
+        height: 120px;
+    }
+    section.icons .overlay img {
+        width: 60px;
+    }
+    section.portfolio .portfolio h2::after {
+        display: none;
+    }
+    section.experience .education h2::after {
+        display: none;
+    }
+    section.experience .experience h2::after,
+    .container.contact-us h2::after,
+    section.icons2 .heading h2::after {
+        display: none;
+    }
+    .container.contact-us h2,
+    section.portfolio .portfolio h2,
+    section.experience h2 {
+        width: 100%;
+        font-weight: 800;
+    }
+}
+
+@media (max-width:575px) {}
+
+@media (min-width:300px) and (max-width:767px) {
+    .navbar-brand img {
+        width: 80px;
+        float: left !important;
+    }
+    section.experience .custom-box,
+    section.experience .custom-box2 {
+        overflow: scroll !important;
+        height: 95%;
+    }
+}
