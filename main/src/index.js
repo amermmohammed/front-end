@@ -42,6 +42,7 @@ $(window).scroll(function() {
 $(document).ready(function() {
     AOS.init({
         duration: 800,
+        disable: 'mobile',
     });
     $("a.scroll").on('click', function(event) {
         var hash = this.hash;

@@ -394,7 +394,7 @@ section.infos .custom-box:last-child {
 }
 
 section.experience h2 {
-    font-size: 80px;
+    font-size: 50px;
     color: #047ccc;
     width: 30%;
     line-height: 56px;
@@ -566,7 +566,7 @@ here
 **/
 
 section.portfolio .portfolio h2 {
-    font-size: 80px;
+    font-size: 50px;
     color: #047ccc;
     width: 30%;
     line-height: 56px;
@@ -734,7 +734,7 @@ section.icons2 .overlay .icon3 {
 }
 
 .container.contact-us h2 {
-    font-size: 80px;
+    font-size: 50px;
     color: #047ccc;
     width: 50%;
     line-height: 56px;
