@@ -39,7 +39,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|png|jpe?g|gif)$/,
+                test: /\.(png|jpe?g|gif)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -72,7 +72,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
-            favicon: "./src/images/icons/favicon.png",
+            favicon: "./src/images/icons/favicon.png"
         }),
         new MiniCssExtractPlugin({ filename: "css/style.css" }),
         new OptimizeCSSAssetsPlugin({}),
