@@ -436,6 +436,7 @@ section.experience .custom-box {
 
 section.experience .custom-box::after {
     font-family: 'FontAwesome';
+    font-weight: 900;
     content: '\f0b1';
     border-radius: 50%;
     border: 2px solid #047ccc;
@@ -519,6 +520,7 @@ section.experience .custom-box2 {
 
 section.experience .custom-box2::after {
     font-family: 'FontAwesome';
+    font-weight: 900;
     content: '\f19d';
     border-radius: 50%;
     border: 2px solid #047ccc;
