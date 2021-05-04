@@ -1062,11 +1062,11 @@ section.icons2 .overlay .icon3 {
         margin-left: 0px !important;
     }
     .row.heding-text h1 {
-        font-size: 25px;
+        font-size: 45px;
     }
     .row.heding-text button.custom-btn {
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 20px;
+        line-height: 35px;
         color: #f4f4f4;
         padding: 10px 30px;
     }
